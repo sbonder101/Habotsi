@@ -1,0 +1,49 @@
+uuid: fc3148d4-8236-4a44-a514-c6054d7a3863
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.home_page
+    - views.view.home_slider
+  module:
+    - block_attributes
+    - block_visibility_groups
+    - ntv_block_background
+    - views
+  theme:
+    - drupalet_arco
+third_party_settings:
+  block_attributes:
+    attr_class: whatwegoodat
+    attr_id: whatwegoodat
+    block_title: ''
+    block_sub_title: ''
+    block_desc: ''
+    block_title_icon: ''
+  ntv_block_background:
+    disable: disable
+    color: '#000000'
+    bg_image: ''
+    bg_image_type: default
+    bg_repeat: 'no'
+    bg_image_position: ''
+    bg_image_size: ''
+    background_overlay: ''
+id: views_block__home_slider_block_1
+theme: drupalet_arco
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:home_slider-block_1'
+settings:
+  id: 'views_block:home_slider-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: home_page

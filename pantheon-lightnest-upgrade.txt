@@ -1,0 +1,199 @@
+ ----------- ------------- --------------- ------------------------------------ 
+  Module      Update ID     Type            Description                         
+ ----------- ------------- --------------- ------------------------------------ 
+  autosave_   8002          hook_update_n   8002 - Populates the setting        
+  form                                      "only_on_form_change".              
+  captcha     8901          hook_update_n   8901 - Implements hook_update_N().  
+  captcha     8902          hook_update_n   8902 - Implements hook_update_N().  
+  datalayer   8001          hook_update_n   8001 - Remove 3rd party settings    
+                                            from any field that doesn't need    
+                                            them.                               
+  datalayer   8002          hook_update_n   8002 - Default the new              
+                                            remove_from_admin_routes setting    
+                                            to false for existing users.        
+  dsu_c_acc   9101          hook_update_n   9101 - Implements hook_update().    
+  ordion                                    DWDL-3199 : Refactor Accordion      
+                                            component. Refactor                 
+                                            dsu_c_accordion module              
+  dsu_c_cor   9101          hook_update_n   9101 - Create new classy_group      
+  e                                         entity && Add section_id and        
+                                            classy fields to paragraph &&       
+                                            Update configs                      
+  dsu_c_cor   9102          hook_update_n   9102 - Remove old classys and old   
+  e                                         ClassyGroup                         
+  dsu_c_cor   9103          hook_update_n   9103 - Add field_c_settings to      
+  e                                         paragraph                           
+  dsu_c_cor   9104          hook_update_n   9104 - Rewrite module config and    
+  e                                         ensure dependencies are installed   
+  dsu_c_ima   9101          hook_update_n   9101 - Refactor dsu_c_image module  
+  ge                                                                            
+  dsu_c_sid   9101          hook_update_n   9101 - Refactor                     
+  eimagetex                                 dsu_c_sideimagetext module          
+  t                                                                             
+  dsu_c_sli   9102          hook_update_n   9102 - Implements hook_update().    
+  der                                       DWDL-3199 : Refactor Slider         
+                                            component. Refactor dsu_c_slider    
+                                            module                              
+  dsu_c_tex   9101          hook_update_n   9101 - Implements hook_update().    
+  t                                         DWDL-3197 : Refactor Text           
+                                            component. Refactor dsu_c_text      
+                                            module                              
+  dsu_ratin   9101          hook_update_n   9101 - Create new marketing_optin   
+  gs_review                                 field && Update configs             
+  s                                                                             
+  dsu_secur   9201          hook_update_n   9201 - Unset                        
+  ity                                       seckit_xss.csp.report-uri default   
+                                            setting in seckit module            
+  dsu_secur   9202          hook_update_n   9202 - Install                      
+  ity                                       file_upload_secure_validator        
+                                            dependency                          
+  dsu_secur   9203          hook_update_n   9203 - Uninstall old dependencies:  
+  ity                                       expire_reset_pass_link and prlp.    
+  layout_bu   8213          hook_update_n   8213 - Relocate 'whitelisted_' and  
+  ilder_res                                 'blacklisted' to 'allowlisted' and  
+  trictions                                 'denylisted'.                       
+  layout_bu   8005          hook_update_n   8005 - Install                      
+  ilder_sty                                 'layout_builder_style_group'        
+  les                                       entity type.                        
+  layout_bu   8006          hook_update_n   8006 - Clear routing cache.         
+  ilder_sty                                                                     
+  les                                                                           
+  lightning   9001          hook_update_n   9001 - Downloads the Dropzone       
+  _media_bu                                 JavaScript library if needed.       
+  lk_upload                                                                     
+  lightning   9001          hook_update_n   9001 - Downloads the Cropper        
+  _media_im                                 JavaScript library if needed.       
+  age                                                                           
+  lightning   9001          hook_update_n   9001 - Downloads the Slick          
+  _media_sl                                 JavaScript library if needed.       
+  ideshow                                                                       
+  ln_datala   8103          hook_update_n   8103 - Remove deprecated datalayer  
+  yer                                       tags.                               
+  ln_tint_c   9101          hook_update_n   9101 - Refactor ln_tint_connector   
+  onnector                                  module                              
+  login_sec   8002          hook_update_n   8002 - Convert track time from      
+  urity                                     hours to minutes.                   
+  metatag     8109          hook_update_n   8109 - Update mask_icon values to   
+                                            the new structure.                  
+  metatag_v   8101          hook_update_n   8101 - Empty update script to       
+  iews                                      trigger a cache clear.              
+  noreferre   8002          hook_update_n   8002 - Rename the domain            
+  r                                         allowlist.                          
+  nppe_bree   9003          hook_update_n   9003 -                              
+  d_selecto                                                                     
+  r                                                                             
+  paragraph   8002          hook_update_n   8002 - Move parts of configuration  
+  s_ee                                      to Paragraphs Features.             
+  password_   8302          hook_update_n   8302 - Create and initialize        
+  policy                                    `password_expire_sent` field.       
+  password_   8303          hook_update_n   8303 - Update the                   
+  policy                                    field_password_expiration field     
+                                            description.                        
+  password_   8304          hook_update_n   8304 - Remove duplicate rows in     
+  policy                                    the password_policy_history table.  
+  pathauto    8108          hook_update_n   8108 - Update node type conditions  
+                                            from node_type to entity_bundle.    
+  simple_si   8401          hook_update_n   8401 - Change the simple_sitemap    
+  temap                                     ID column to serial.                
+  simple_si   8402          hook_update_n   8402 - Install new                  
+  temap                                     simple_sitemap_type and             
+                                            simple_sitemap configuration        
+                                            entities.                           
+  simple_si   8403          hook_update_n   8403 - Migrate the                  
+  temap                                     default_hreflang sitemap type and   
+                                            its variants to new configuration   
+                                            entities.                           
+  simple_si   8404          hook_update_n   8404 - Add dependencies to sitemap  
+  temap                                     entities.                           
+  simple_si   8405          hook_update_n   8405 - Create the index sitemap     
+  temap                                     type.                               
+  simple_si   8406          hook_update_n   8406 - Create the index sitemap.    
+  temap                                                                         
+  webform     8623          hook_update_n   8623 - Issue #3220703: Add support  
+                                            for bulk operations on webform      
+                                            entities.                           
+  webform     8624          hook_update_n   8624 - Issue #3216928: Allow        
+                                            Base64 encoded file data to be      
+                                            excluded from remote posts.         
+  webform     8625          hook_update_n   8625 - Issue #3240393: Allow the    
+                                            number of webform per page to       
+                                            configurable.                       
+  webform     8636          hook_update_n   8636 - Issue #3240399: Move form    
+                                            #method, #action, and #attributes.  
+  webform     8637          hook_update_n   8637 - Issue #3249092: Disable      
+                                            'Allow users to post submissions    
+                                            from a dedicated URL' for all       
+                                            webforms.                           
+  autologou   8014          post-update     Post update hook for all changes    
+  t                                         between 8.x-1.3 and 8.x-1.4.        
+  blazy       added_blazy   post-update     Added \Drupal\blazy\BlazyBase       
+              _base_servi                   service for non-media methods.      
+              ce                                                                
+  blazy       app_root      post-update     Fixed for D8 to D10+ cross-compat   
+                                            `app.root`.                         
+  blazy       move_media_   post-update     Moved media-related classes and     
+              services_cl                   services into \Drupal\blazy\Media   
+              asses                         namespace.                          
+  blazy       remove_io_e   post-update     Removed io.enabled settings as per  
+              nabled_key                    #3258851.                           
+  blazy       vanilla_onc   post-update     Clear cache to re-generate assets.  
+              e                                                                 
+  captcha     refresh_cap   post-update     Ensure the container cache is       
+              tcha_helper                   cleared.                            
+              _service                                                          
+  ctools      remove_enti   post-update     Invalidate the service container    
+              tybundlecon                   to force EntityBundleConstriant is  
+              straint                       Removed.                            
+  dsu_c_acc   refactor_fi   post-update     Migrate old field values to news    
+  ordion      elds_migrat                                                       
+              e                                                                 
+  dsu_c_cor   refactor_cl   post-update     Migrate old field values to news    
+  e           assy_remove                                                       
+  dsu_c_cor   refactor_fi   post-update     Migrate old field values to news    
+  e           elds_migrat                                                       
+              e                                                                 
+  dsu_c_cor   refactor_fi   post-update     Migrate old field values to news    
+  e           elds_migrat                                                       
+              e_n_core                                                          
+  dsu_c_ima   refactor_fi   post-update     Migrate old field values to news    
+  ge          elds_migrat                                                       
+              e                                                                 
+  dsu_c_sid   refactor_fi   post-update     Migrate old field values to news    
+  eimagetex   elds_migrat                                                       
+  t           e                                                                 
+  dsu_c_sli   refactor_fi   post-update     Migrate old field values to news    
+  der         elds_migrat                                                       
+              e                                                                 
+  dsu_c_tex   refactor_fi   post-update     Migrate old field values to news    
+  t           elds_migrat                                                       
+              e                                                                 
+  honeypot    joyride_loc   post-update     Convert deprecated Joyride          
+              ation_to_po                   'location' properties to            
+              sition                        'position' properties.              
+  honeypot    rebuild_ser   post-update     Rebuild the service container       
+              vice_contai                   after adding new 'honeypot'         
+              ner                           service.                            
+  layout_bu   add_group     post-update     Add "default" Layout Builder Style  
+  ilder_sty                                 Group to pre-existing styles.       
+  les                                                                           
+  ln_tint_c   refactor_fi   post-update     Migrate old field values to news    
+  onnector    elds_migrat                                                       
+              e                                                                 
+  metatag     convert_aut   post-update     The author meta tag was moved into  
+              hor_config                    the main module: configuration.     
+  metatag     convert_aut   post-update     The author meta tag was moved into  
+              hor_data                      the main module: entity data.       
+  metatag     convert_mas   post-update     Convert mask-icon to array values.  
+              k_icon_to_a                                                       
+              rray_values                                                       
+  metatag_v   fix_google_   post-update     Fix regressions from when the       
+  erificati   tag_regress                   duplicate "google" meta tag fixed.  
+  on          ion                                                               
+  simple_si   8403          post-update     Prevent config:import from          
+  temap                                     deleting and recreating configs     
+                                            created through update hooks.       
+ ----------- ------------- --------------- ------------------------------------ 
+
+
+ // Do you wish to run the specified pending updates?: yes.                     
+

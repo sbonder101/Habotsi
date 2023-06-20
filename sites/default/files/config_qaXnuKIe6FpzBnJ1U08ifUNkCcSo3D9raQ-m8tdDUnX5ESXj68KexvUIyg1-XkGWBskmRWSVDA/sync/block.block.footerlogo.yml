@@ -1,0 +1,49 @@
+uuid: 2ef8e01e-e783-4300-a0be-5197ee328cf7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_logo:2de105eb-8975-4293-a3d7-cf95a3155c7e'
+  module:
+    - block_attributes
+    - block_content
+    - block_visibility_groups
+    - ntv_block_background
+  theme:
+    - drupalet_arco
+third_party_settings:
+  block_attributes:
+    attr_class: ''
+    attr_id: ''
+    block_title: ''
+    block_sub_title: ''
+    block_desc: ''
+    block_title_icon: ''
+  ntv_block_background:
+    disable: disable
+    color: '#000000'
+    bg_image: ''
+    bg_image_type: default
+    bg_repeat: 'no'
+    bg_image_position: ''
+    bg_image_size: ''
+    background_overlay: ''
+id: footerlogo
+theme: drupalet_arco
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:2de105eb-8975-4293-a3d7-cf95a3155c7e'
+settings:
+  id: 'block_content:2de105eb-8975-4293-a3d7-cf95a3155c7e'
+  label: 'Footer Logo'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''

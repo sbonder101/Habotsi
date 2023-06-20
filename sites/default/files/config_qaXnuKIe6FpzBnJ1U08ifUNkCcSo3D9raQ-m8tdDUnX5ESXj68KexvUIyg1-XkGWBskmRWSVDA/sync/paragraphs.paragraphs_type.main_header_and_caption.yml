@@ -1,0 +1,10 @@
+uuid: 243c2541-26ed-4512-9f20-5f780122c457
+langcode: en
+status: true
+dependencies: {  }
+id: main_header_and_caption
+label: 'Main Header and Caption'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

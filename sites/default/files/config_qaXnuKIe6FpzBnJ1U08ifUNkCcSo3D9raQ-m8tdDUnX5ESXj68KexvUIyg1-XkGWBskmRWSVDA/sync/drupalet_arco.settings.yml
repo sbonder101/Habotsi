@@ -1,0 +1,18 @@
+features:
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 1
+favicon:
+  use_default: 1
+logo_width: 281px
+logo_height: 67px
+logo_margin: '0px 0px 0px 0px'
+customize_css: ''
+customize_js: ''
+google_key: ''
+header_sticky: sticky
+header_bg_image: ''
+footer_style: classic

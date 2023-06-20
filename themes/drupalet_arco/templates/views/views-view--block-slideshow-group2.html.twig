@@ -1,0 +1,20 @@
+<header class="header slider-fade" data-scroll-index="0">
+	<div class="container-fluid">
+		<div class="row">
+			{% if header %}
+				{{ header }}
+			{% endif %}
+			<div class="owl-carousel owl-theme full-width">
+				{{ rows }}
+				{{ empty }}
+				{{ pager }}
+				{{ more }}
+			</div>
+			{% if footer %}
+				{{ footer }}
+			{% endif %}
+
+		</div>
+		
+	</div>
+</header>

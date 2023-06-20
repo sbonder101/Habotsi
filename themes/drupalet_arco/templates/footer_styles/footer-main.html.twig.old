@@ -1,0 +1,44 @@
+<footer>
+    <div class="container">
+      {% block footer %}
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="col-md-7">
+          <img src="/themes/drupalet_arco/logo-light.png" alt="" width="20" class="mb-30">
+        </div>
+        <div class="col-md-9">
+              <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed luctus diam. </p>
+        </div>
+      </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#" class="text-muted font-weight-bold">For Women</a></li>
+            <li class="mb-2"><a href="#" class="text-muted font-weight-bold">For Men</a></li>
+            <li class="mb-2"><a href="#" class="text-muted font-weight-bold">Stores</a></li>
+            <li class="mb-2"><a href="#" class="text-muted font-weight-bold">Our Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">CONTACT US</h6>
+          <div class="col-md-12">
+			<div class="row">
+				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed luctus diam. </p>
+			</div>
+
+			<div class="row">
+				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed luctus diam. </p>
+			</div>
+	   	  </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Connect</h6>
+          <ul class="list-inline mt-4">
+			<li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    
+</footer>

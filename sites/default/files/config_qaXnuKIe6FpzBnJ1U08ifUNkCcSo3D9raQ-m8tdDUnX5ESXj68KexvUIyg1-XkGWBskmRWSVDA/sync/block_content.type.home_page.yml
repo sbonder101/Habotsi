@@ -1,0 +1,8 @@
+uuid: d267dbac-ce34-414e-88a3-bc7da1d97ac8
+langcode: en
+status: true
+dependencies: {  }
+id: home_page
+label: 'Home Page'
+revision: 0
+description: ''

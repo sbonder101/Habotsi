@@ -1,0 +1,48 @@
+uuid: 216cb5d9-4d7d-4d42-994d-76d4a0be0e9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.categories
+  module:
+    - block_attributes
+    - block_visibility_groups
+    - ntv_block_background
+    - views
+  theme:
+    - drupalet_arco
+third_party_settings:
+  block_attributes:
+    attr_class: ''
+    attr_id: ''
+    block_title: ''
+    block_sub_title: ''
+    block_desc: ''
+    block_title_icon: ''
+  ntv_block_background:
+    disable: disable
+    color: '#000000'
+    bg_image: ''
+    bg_image_type: default
+    bg_repeat: 'no'
+    bg_image_position: ''
+    bg_image_size: ''
+    background_overlay: ''
+id: views_block__categories_block_categories_wiget
+theme: drupalet_arco
+region: sidebar_left
+weight: -36
+provider: null
+plugin: 'views_block:categories-block_categories_wiget'
+settings:
+  id: 'views_block:categories-block_categories_wiget'
+  label: Categories
+  provider: views
+  label_display: visible
+  views_label: Categories
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''

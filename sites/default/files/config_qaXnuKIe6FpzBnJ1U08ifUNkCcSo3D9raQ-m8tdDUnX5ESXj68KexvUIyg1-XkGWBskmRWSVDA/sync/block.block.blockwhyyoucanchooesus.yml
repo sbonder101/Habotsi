@@ -1,0 +1,51 @@
+uuid: 456f835d-ee1a-4df6-bfe2-ef94a07a493b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.main_demo
+  content:
+    - 'block_content:basic:f0542398-b031-4dd6-b491-16436efb9d94'
+  module:
+    - block_attributes
+    - block_content
+    - block_visibility_groups
+    - ntv_block_background
+  theme:
+    - drupalet_arco
+third_party_settings:
+  block_attributes:
+    attr_class: 'section-box remove-container-class'
+    attr_id: ''
+    block_title: ''
+    block_sub_title: ''
+    block_desc: ''
+    block_title_icon: ''
+  ntv_block_background:
+    disable: disable
+    color: '#000000'
+    bg_image: ''
+    bg_image_type: default
+    bg_repeat: 'no'
+    bg_image_position: ''
+    bg_image_size: ''
+    background_overlay: ''
+id: blockwhyyoucanchooesus
+theme: drupalet_arco
+region: content
+weight: -23
+provider: null
+plugin: 'block_content:f0542398-b031-4dd6-b491-16436efb9d94'
+settings:
+  id: 'block_content:f0542398-b031-4dd6-b491-16436efb9d94'
+  label: 'Block Why You Can Chooes Us?'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: main_demo

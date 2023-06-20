@@ -1,0 +1,29 @@
+{%
+	set classes = [
+	  dom_id ? 'js-view-dom-id-' ~ dom_id,
+	]
+  %}
+<div{{ attributes.addClass(classes) }}>
+<!-- filter links -->
+<div class="filtering text-center mb-30 col-sm-12">
+	<div class="filter"> 
+		<span data-filter='*' class="active">All</span> 
+		{% if header %}
+			{{ header }}
+		{% endif %}
+
+	</div>
+</div>
+<div class="clearfix"></div>
+
+<!-- gallery -->
+<div class="text-center home-gallery full-width home-background card-group"> 
+	{{ rows }}
+	{{ empty }}
+	{{ pager }}
+	{{ more }}
+</div>
+{% if footer %}
+	{{ footer }}
+{% endif %}
+</div>

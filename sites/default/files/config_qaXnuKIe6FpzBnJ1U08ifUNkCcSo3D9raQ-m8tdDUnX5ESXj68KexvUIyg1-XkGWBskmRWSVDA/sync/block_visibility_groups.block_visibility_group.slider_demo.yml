@@ -1,0 +1,17 @@
+uuid: 9be3c63b-b7e9-42d8-a928-ecdcacf697ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: slider_demo
+label: 'Slider Demo'
+logic: and
+conditions:
+  36809448-c992-48a5-ab52-fd54958fe5ba:
+    id: request_path
+    pages: /slider-demo
+    negate: false
+    context_mapping: {  }
+    uuid: 36809448-c992-48a5-ab52-fd54958fe5ba
+allow_other_conditions: false

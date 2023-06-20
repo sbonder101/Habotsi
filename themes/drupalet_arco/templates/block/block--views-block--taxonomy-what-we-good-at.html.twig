@@ -1,0 +1,42 @@
+{% set custom_classes = '' %}
+{% if label == '' %}
+{% set custom_classes = 'no-title' %}
+{% endif %}
+{%
+  set classes = [
+    'block',
+	'widget',
+	'drp-block',
+	'sidebar-box',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    custom_classes
+  ]
+%}
+{%
+  set classes_section = [
+    'section',
+	'block',
+	'drp-block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    custom_classes
+  ]
+%}
+{%
+  set classes_footer = [
+    'block',
+	'drp-block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    custom_classes
+  ]
+%}
+
+<section {{ attributes.addClass(classes_section) }}>
+	<div class="container">
+		<div class="row" id="columns-scroll">
+			{{ content }}
+		</div>
+	</div>
+</section>

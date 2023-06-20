@@ -1,0 +1,20 @@
+uuid: fbf7b19b-c61d-4284-9324-b9b6e44ed6dc
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wUmchtQ3Bj3srSvNnA9Ey2UBgRpUvuDDN1FLH44VH4c
+name: 'Default newsletter'
+id: default
+description: 'This is an example newsletter. Change it.'
+format: plain
+priority: 0
+receipt: true
+from_name: 'Arco - One Page Parallax Drupal 9 Theme'
+subject: '[[simplenews-newsletter:name]] [node:title]'
+from_address: drupalet022@gmail.com
+hyperlinks: false
+allowed_handlers: {  }
+new_account: none
+opt_inout: double
+weight: 0

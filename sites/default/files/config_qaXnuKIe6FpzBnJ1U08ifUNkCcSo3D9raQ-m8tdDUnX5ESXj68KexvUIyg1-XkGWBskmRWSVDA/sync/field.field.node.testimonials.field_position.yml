@@ -1,0 +1,21 @@
+uuid: 58b36580-ea1c-405f-b341-97c375b3c0fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position
+    - node.type.testimonials
+id: node.testimonials.field_position
+field_name: field_position
+entity_type: node
+bundle: testimonials
+label: Position
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: Customer
+default_value_callback: ''
+settings: {  }
+field_type: string

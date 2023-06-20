@@ -1,0 +1,50 @@
+uuid: 360dfcbf-9c1b-43b1-905f-31fd5c1f360a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.slider_text
+    - views.view.slideshow
+  module:
+    - block_attributes
+    - block_visibility_groups
+    - ntv_block_background
+    - views
+  theme:
+    - drupalet_arco
+third_party_settings:
+  block_attributes:
+    attr_class: color-white
+    attr_id: ''
+    block_title: ''
+    block_sub_title: ''
+    block_desc: ''
+    block_title_icon: ''
+  ntv_block_background:
+    disable: enable
+    color: '#000000'
+    thumbnail_preview: ''
+    bg_image: /demo/sites/default/files/background/bg1.jpg
+    bg_image_type: default
+    bg_repeat: 'no'
+    bg_image_position: 'center center'
+    bg_image_size: cover
+    background_overlay: 'rgba(0, 0, 0, 0.50)'
+id: views_block__slideshow_group3
+theme: drupalet_arco
+region: slideshow_content
+weight: 0
+provider: null
+plugin: 'views_block:slideshow-block_slideshow_group3'
+settings:
+  id: 'views_block:slideshow-block_slideshow_group3'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: slider_text

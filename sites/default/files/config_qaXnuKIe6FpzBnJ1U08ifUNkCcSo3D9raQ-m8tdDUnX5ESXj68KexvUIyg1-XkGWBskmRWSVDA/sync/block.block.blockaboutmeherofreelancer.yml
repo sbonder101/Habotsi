@@ -1,0 +1,51 @@
+uuid: 543bc5ed-2f02-435c-88f7-7bebb209234e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.freelancer
+  content:
+    - 'block_content:basic:966022cd-b97d-42ff-a5db-5884d4cd9362'
+  module:
+    - block_attributes
+    - block_content
+    - block_visibility_groups
+    - ntv_block_background
+  theme:
+    - drupalet_arco
+third_party_settings:
+  block_attributes:
+    attr_class: 'hero section-padding'
+    attr_id: about
+    block_title: ''
+    block_sub_title: ''
+    block_desc: ''
+    block_title_icon: ''
+  ntv_block_background:
+    disable: disable
+    color: '#000000'
+    bg_image: ''
+    bg_image_type: default
+    bg_repeat: 'no'
+    bg_image_position: ''
+    bg_image_size: ''
+    background_overlay: ''
+id: blockaboutmeherofreelancer
+theme: drupalet_arco
+region: content
+weight: -33
+provider: null
+plugin: 'block_content:966022cd-b97d-42ff-a5db-5884d4cd9362'
+settings:
+  id: 'block_content:966022cd-b97d-42ff-a5db-5884d4cd9362'
+  label: 'Block About Me - hero - freelancer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: freelancer

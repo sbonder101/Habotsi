@@ -1,0 +1,15 @@
+uuid: 5fca85af-bee0-4b4e-93f5-14a7912b9bd6
+name: Habotsi
+mail: drupalet022@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: /node/41
+  front: /node/47
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+mail_notification: ''

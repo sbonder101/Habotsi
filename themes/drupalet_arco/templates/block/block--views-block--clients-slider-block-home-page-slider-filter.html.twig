@@ -1,0 +1,51 @@
+{% set custom_classes = '' %}
+{% if label == '' %}
+{% set custom_classes = 'no-title' %}
+{% endif %}
+{%
+  set classes = [
+    'block',
+	'widget',
+	'drp-block',
+	'sidebar-box',
+	'client-slider',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    custom_classes
+  ]
+%}
+{%
+  set classes_section = [
+    'section',
+	'block',
+	'drp-block',
+	'client-slider',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    custom_classes
+  ]
+%}
+{%
+  set classes_footer = [
+    'block',
+	'drp-block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    custom_classes
+  ]
+%}
+
+<section {{ attributes.addClass(classes_section) }}>
+	<div class="container">
+		<div class="row">
+			{% if label %}
+				<div class="section-head text-center col-sm-12">
+					<h4 class="title-section">{{ label }}</h4>
+					<h6 class="subtitle-section"></h6>
+				</div>
+			{% endif %}
+			{{ title_prefix }}
+			{{ content }}
+		</div>
+	</div>
+</section>

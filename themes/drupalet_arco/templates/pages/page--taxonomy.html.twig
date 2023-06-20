@@ -1,0 +1,76 @@
+<!-- HEADER START --> 
+{% include header_skin %}
+<!-- HEADER END --> 
+{% set sidebar = '' %}
+{% set pageheader = '' %}
+
+{% if node.drpn_node_settings_2.value is not empty %}
+	{% set sidebar = node.drpn_node_settings_2.value %}
+{% endif %}
+
+{% if node.drpn_node_settings_3.value is not empty %}
+	{% set pageheader = node.drpn_node_settings_3.value %}
+{% endif %}
+
+
+	<section id="home" class="min-header" data-scroll-index="0">
+		<div class="v-middle mt-30">
+			<div class="container">
+				<div class="row">
+
+					<div class="text-center col-md-12">
+						<h5>{{ page['#title'] }}</h5>
+						<a href="">{{ 'Home'|t }}</a>
+						<a href="#0">{{ node.title.value }}</a>
+					</div>
+
+				</div>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</section>
+
+<!-- CONTENT --> 
+{% if page.slideshow_content %}
+	{{ page.slideshow_content }}
+{% endif %}	
+
+{% if page.help %}
+<section class="section-padding" data-scroll-index="1">
+	<div class="container">
+		<div class="row">
+			{{ page.help }}
+		</div>
+	</div>
+</section>
+{% endif %}
+
+{% if page.before_content %}
+	{{ page.before_content }}
+{% endif %}
+
+<section class="blogs section-padding page-taxonomy-content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 content-sidebar-page">
+				{% include '@drupalet_arco/pages/main.html.twig' %}	
+			</div>
+			<div class="col-md-4">
+				<div class="side-bar">
+					{% if page.sidebar_right %}
+						{{ page.sidebar_right }}
+					{% endif %}
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% if page.content_bottom %}
+	{{ page.content_bottom }}
+{% endif %}
+
+
+<!-- FOOTER START --> 
+	{% include '@drupalet_arco/footer_styles/footer-classic.html.twig' %}
+<!-- FOOTER END --> 

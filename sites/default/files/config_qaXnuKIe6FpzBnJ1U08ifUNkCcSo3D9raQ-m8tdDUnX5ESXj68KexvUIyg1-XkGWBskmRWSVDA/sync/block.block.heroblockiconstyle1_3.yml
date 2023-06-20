@@ -1,0 +1,51 @@
+uuid: c67b0e3d-52de-4a3c-a033-2279cd533553
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.slider_text
+  content:
+    - 'block_content:basic:ce0a7d69-7e58-4cfe-9099-48156b47af9e'
+  module:
+    - block_attributes
+    - block_content
+    - block_visibility_groups
+    - ntv_block_background
+  theme:
+    - drupalet_arco
+third_party_settings:
+  block_attributes:
+    attr_class: hero
+    attr_id: ''
+    block_title: ''
+    block_sub_title: ''
+    block_desc: ''
+    block_title_icon: ''
+  ntv_block_background:
+    disable: disable
+    color: '#000000'
+    bg_image: ''
+    bg_image_type: default
+    bg_repeat: 'no'
+    bg_image_position: ''
+    bg_image_size: ''
+    background_overlay: ''
+id: heroblockiconstyle1_3
+theme: drupalet_arco
+region: content
+weight: -40
+provider: null
+plugin: 'block_content:ce0a7d69-7e58-4cfe-9099-48156b47af9e'
+settings:
+  id: 'block_content:ce0a7d69-7e58-4cfe-9099-48156b47af9e'
+  label: 'Hero block icon- style 1'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: slider_text

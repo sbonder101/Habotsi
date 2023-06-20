@@ -1,0 +1,34 @@
+
+ {% if header %}
+    <div class="hero section">
+			<div class="container">
+				<div class="row">
+          <div class="intro offset-lg-1 col-lg-10 text-center">
+          {{ header }}
+          </div>
+        </div>
+      </div>  
+    </div>
+  {% endif %}
+
+<!-- filter links -->
+  <div class="filtering text-center mb-30 col-sm-12">
+    <div class="filter"> 
+      {% if exposed %}
+        {{ exposed }}
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- gallery -->
+  <div class="text-center archive-cards full-width home-background"> 
+    {{ rows }}
+    {{ empty }}
+    {{ pager }}
+    {{ more }}
+  </div>
+  {% if footer %}
+    {{ footer }}
+  {% endif %}
+
+

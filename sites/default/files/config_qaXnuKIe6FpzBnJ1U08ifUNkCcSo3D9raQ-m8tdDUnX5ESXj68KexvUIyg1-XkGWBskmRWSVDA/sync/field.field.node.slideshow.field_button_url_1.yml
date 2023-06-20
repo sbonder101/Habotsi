@@ -1,0 +1,21 @@
+uuid: 43e4f4d4-b7b9-4199-adcf-4781577767d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_button_url_1
+    - node.type.slideshow
+id: node.slideshow.field_button_url_1
+field_name: field_button_url_1
+entity_type: node
+bundle: slideshow
+label: 'Button URL 1'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '#'
+default_value_callback: ''
+settings: {  }
+field_type: string

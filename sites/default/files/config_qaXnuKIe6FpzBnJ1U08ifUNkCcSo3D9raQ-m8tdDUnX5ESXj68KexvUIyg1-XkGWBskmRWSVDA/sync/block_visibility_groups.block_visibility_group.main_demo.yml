@@ -1,0 +1,17 @@
+uuid: bf310f8d-2efc-4443-9633-c8762ffe1e52
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: main_demo
+label: 'Main Demo'
+logic: and
+conditions:
+  8d75cfa5-76ce-4723-ad96-5231eddb9c15:
+    id: request_path
+    pages: /main-demo
+    negate: false
+    context_mapping: {  }
+    uuid: 8d75cfa5-76ce-4723-ad96-5231eddb9c15
+allow_other_conditions: false

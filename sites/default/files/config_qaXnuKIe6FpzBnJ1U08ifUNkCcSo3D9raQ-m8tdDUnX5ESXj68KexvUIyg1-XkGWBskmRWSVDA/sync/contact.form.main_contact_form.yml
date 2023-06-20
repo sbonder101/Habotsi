@@ -1,0 +1,12 @@
+uuid: 32d06e08-35f9-40e2-bb80-f8106902ba06
+langcode: en
+status: true
+dependencies: {  }
+id: main_contact_form
+label: 'Main Contact form'
+recipients:
+  - drupalet022@gmail.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''

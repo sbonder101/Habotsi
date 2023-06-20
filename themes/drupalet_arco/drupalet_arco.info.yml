@@ -1,0 +1,43 @@
+name: Drupalet Arco
+type: theme
+description: 'A flexible, recolorable theme with many regions and a responsive, mobile-first layout.'
+package: drupaletthemes
+base theme: false
+libraries:
+  - drupalet_arco/global-styling
+  - core/jquery
+
+libraries-override:
+  views_infinite_scroll/views-infinite-scroll: drupalet_arco/views-infinite-scroll
+
+ckeditor_stylesheets:
+  - css/base/elements.css
+  - css/components/captions.css
+  - css/components/table.css
+  - css/components/text-formatted.css
+  - css/classy/components/media-embed-error.css
+
+regions:
+  search: 'Search'
+  branding: 'Branding'
+  header_right: 'Header Right'
+  breadcrumbs: 'Breadcrumbs'
+  help: 'Help'
+  main_menu: 'Main menu'
+  slideshow_content: 'Slideshow'
+  before_content: 'Before Content'
+  content: 'Main content'
+  after_content: 'After Content'
+  contact_info: 'Contact Info'
+  sidebar_left: 'Sidebar Left'
+  sidebar_right: 'Sidebar Right'
+  footer: 'Footer Content'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  footer_forth: 'Footer forth'
+  other: 'Other'
+
+version: '9.x'
+core_version_requirement: ^8.8 || ^9
+project: 'drupal'

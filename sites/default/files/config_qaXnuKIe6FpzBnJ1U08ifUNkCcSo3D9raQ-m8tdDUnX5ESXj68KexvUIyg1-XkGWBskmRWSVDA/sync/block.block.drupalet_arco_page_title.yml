@@ -1,0 +1,20 @@
+uuid: a14f432b-366c-4302-8e3b-1e9130852b0a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupalet_arco
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: drupalet_arco_page_title
+theme: drupalet_arco
+region: other
+weight: -4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

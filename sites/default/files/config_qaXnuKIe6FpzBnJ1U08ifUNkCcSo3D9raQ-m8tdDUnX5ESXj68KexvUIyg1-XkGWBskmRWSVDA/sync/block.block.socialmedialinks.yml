@@ -1,0 +1,189 @@
+uuid: ad09a5a9-bec1-4668-b1a8-9890b9606e9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_attributes
+    - block_visibility_groups
+    - ntv_block_background
+    - social_media_links
+  theme:
+    - drupalet_arco
+third_party_settings:
+  block_attributes:
+    attr_class: ''
+    attr_id: ''
+    block_title: ''
+    block_sub_title: ''
+    block_desc: ''
+    block_title_icon: ''
+  ntv_block_background:
+    disable: disable
+    color: '#000000'
+    bg_image: ''
+    bg_image_type: default
+    bg_repeat: 'no'
+    bg_image_position: ''
+    bg_image_size: ''
+    background_overlay: ''
+id: socialmedialinks
+theme: drupalet_arco
+region: footer_forth
+weight: 0
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  provider: social_media_links
+  label_display: '0'
+  platforms:
+    email:
+      value: ''
+      description: ''
+      weight: '-43'
+    facebook:
+      value: habotsi
+      description: ''
+      weight: '-42'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-41'
+    github:
+      value: ''
+      description: ''
+      weight: '-40'
+    gitlab:
+      value: ''
+      description: ''
+      weight: '-39'
+    glassdoor:
+      value: ''
+      description: ''
+      weight: '-38'
+    goodreads:
+      value: ''
+      description: ''
+      weight: '-37'
+    googleplay:
+      value: ''
+      description: ''
+      weight: '-36'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-35'
+    twitter:
+      value: habotsi
+      description: ''
+      weight: '-34'
+    instagram:
+      value: habotsi
+      description: ''
+      weight: '-33'
+    linkedin:
+      value: ''
+      description: ''
+      weight: '-32'
+    mastodon:
+      value: ''
+      description: ''
+      weight: '-31'
+    meetup:
+      value: ''
+      description: ''
+      weight: '-30'
+    patreon:
+      value: ''
+      description: ''
+      weight: '-29'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-28'
+    rss:
+      value: ''
+      description: ''
+      weight: '-27'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '-26'
+    telegram:
+      value: ''
+      description: ''
+      weight: '-25'
+    tiktok:
+      value: ''
+      description: ''
+      weight: '-24'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-23'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '-22'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '-21'
+    website:
+      value: ''
+      description: ''
+      weight: '-20'
+    whatsapp:
+      value: ''
+      description: ''
+      weight: '-19'
+    xing:
+      value: ''
+      description: ''
+      weight: '-18'
+    youtube:
+      value: ''
+      description: ''
+      weight: '-17'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '-16'
+    amazon:
+      value: ''
+      description: ''
+      weight: '-10'
+    behance:
+      value: ''
+      description: ''
+      weight: '-9'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-8'
+    contact:
+      value: ''
+      description: ''
+      weight: '-7'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-6'
+  appearance:
+    orientation: h
+    show_name: 0
+    suggestion: ''
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:3x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''

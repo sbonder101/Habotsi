@@ -1,0 +1,21 @@
+uuid: 880346dd-cbfc-4a11-81c0-4ca23b0fb029
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_logo
+    - field.storage.block_content.field_copywrite_text
+  module:
+    - text
+id: block_content.footer_logo.field_copywrite_text
+field_name: field_copywrite_text
+entity_type: block_content
+bundle: footer_logo
+label: 'Copywrite Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

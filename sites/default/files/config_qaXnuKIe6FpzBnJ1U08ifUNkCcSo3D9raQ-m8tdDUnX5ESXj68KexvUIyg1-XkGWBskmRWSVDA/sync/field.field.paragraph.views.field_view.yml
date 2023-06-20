@@ -1,0 +1,24 @@
+uuid: 307dde74-043a-49db-9206-c7d48c23e54b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_view
+    - paragraphs.paragraphs_type.views
+  module:
+    - block_field
+id: paragraph.views.field_view
+field_name: field_view
+entity_type: paragraph
+bundle: views
+label: View
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids: {  }
+field_type: block_field

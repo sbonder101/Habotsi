@@ -1,0 +1,20 @@
+uuid: ef8f133c-eee7-4934-ac73-13f55a635b49
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.main_contact_form
+id: contact_message.main_contact_form.default
+targetEntityType: contact_message
+bundle: main_contact_form
+mode: default
+content:
+  message:
+    type: string
+    weight: 0
+    label: above
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,51 @@
+uuid: ccb846e4-dac7-4b82-8800-33a3d5c52f7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.slider_demo
+  content:
+    - 'block_content:basic:9541b379-0382-4b7d-82f9-1dee56da6598'
+  module:
+    - block_attributes
+    - block_content
+    - block_visibility_groups
+    - ntv_block_background
+  theme:
+    - drupalet_arco
+third_party_settings:
+  block_attributes:
+    attr_class: 'price section-padding bg-gray'
+    attr_id: price
+    block_title: 'Our Pricing'
+    block_sub_title: 'Chooes Our Offers'
+    block_desc: ''
+    block_title_icon: ''
+  ntv_block_background:
+    disable: disable
+    color: '#000000'
+    bg_image: ''
+    bg_image_type: default
+    bg_repeat: 'no'
+    bg_image_position: ''
+    bg_image_size: ''
+    background_overlay: ''
+id: ourpricingstyle1_2
+theme: drupalet_arco
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:9541b379-0382-4b7d-82f9-1dee56da6598'
+settings:
+  id: 'block_content:9541b379-0382-4b7d-82f9-1dee56da6598'
+  label: 'Our Pricing'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: slider_demo

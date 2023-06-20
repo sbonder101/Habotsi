@@ -1,0 +1,49 @@
+uuid: 83bd9b8a-268a-4dc8-8f4f-f3a65b4c6d38
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.freelancer
+    - views.view.testimonials
+  module:
+    - block_attributes
+    - block_visibility_groups
+    - ntv_block_background
+    - views
+  theme:
+    - drupalet_arco
+third_party_settings:
+  block_attributes:
+    attr_class: 'testimonials carousel-single section-padding bg-img bg-fixed'
+    attr_id: ''
+    block_title: ''
+    block_sub_title: ''
+    block_desc: ''
+    block_title_icon: ''
+  ntv_block_background:
+    disable: enable
+    color: '#000000'
+    bg_image: /demo/sites/default/files/background/bg4.jpg
+    bg_image_type: fixed
+    bg_repeat: 'yes'
+    bg_image_position: 'center center'
+    bg_image_size: cover
+    background_overlay: 'rgba(0, 0, 0, 0.81)'
+id: views_block__testimonials_block_testimonials_style1_2
+theme: drupalet_arco
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:testimonials-block_testimonials_style1'
+settings:
+  id: 'views_block:testimonials-block_testimonials_style1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: freelancer

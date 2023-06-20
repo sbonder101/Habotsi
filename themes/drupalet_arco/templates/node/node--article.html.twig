@@ -1,0 +1,77 @@
+{% if node.getRevisionAuthor().field_full_name.value %}
+    {% set full_name = node.getRevisionAuthor().field_full_name.value %}
+{% endif %}
+{% if full_name is null %}
+  {% set full_name =  author_name %}
+{% endif %}
+
+{% set img_uri = node.field_image.entity.uri.value %}
+{% set img_url = file_url(img_uri) %}
+{% set img_alt = node.field_image.alt %}
+{% set length_image = node.field_image|length  %}
+{% set img_arr = node.field_image %}
+{% set comment_count =  content.comment['#items'].comment_count %}
+{# set youtube_url = node.field_youtube_url.value #}
+{# set vimeo_url = node.field_vimeo_url.value #}
+
+{# set display_video_type = node.field_display_video_type.value #}
+{% if not page %}
+
+<div class="post">
+	<div class="post-img"> <a href="{{ path('entity.node.canonical', {'node': node.id}) }}" class="full-width"> <img src="{{ img_url }}" alt="{{ node.title.value }}" /> </a> </div>
+	<div class="content text-center">
+		<div class="post-meta">
+			<div class="post-title">
+				<h5> <a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{ node.title.value }}</a> </h5>
+			</div>
+			<ul class="meta">
+				<li> <a href="{{ path('entity.node.canonical', {'node': node.id}) }}"> <i class="fa fa-user" aria-hidden="true"></i> {{ full_name }} </a> </li>
+				<li> <a href="{{ path('entity.node.canonical', {'node': node.id}) }}"> <i class="fa fa-folder-open" aria-hidden="true"></i> {{ content.field_blog_categories }} </a> </li>
+				<li> <a href="{{ path('entity.node.canonical', {'node': node.id}) }}"> <i class="fa fa-calendar" aria-hidden="true"></i> {{ node.getCreatedTime|date('M d, Y') }} </a> </li>
+				
+			</ul>
+		</div>
+		<div class="post-cont">
+			{{ node.body.summary }}
+		</div>
+		<a href="{{ path('entity.node.canonical', {'node': node.id}) }}" class="butn butn-bg mt-30"><span>Read More</span></a> </div>
+</div>
+
+
+{% else %}
+
+<div class="posts">
+<div class="post mb-80">
+	{% if length_image > 1 %}
+						
+	{% else %}
+		<div class="post-img"> <a href="#0" class="full-width"> <img class="img-responsive" src="{{ img_url }}" alt="{{ img_alt }}">  </a> </div>
+	{% endif %} 
+	
+	<div class="content">
+		<div class="post-meta">
+			<div class="post-title">
+				<h5> <a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{ node.title.value }}</a> </h5>
+			</div>
+			<ul class="meta">
+				<li> <a href="#0"> <i class="fa fa-user" aria-hidden="true"></i> {{ full_name }} </a> </li>
+				<li> <a href="#0"> <i class="fa fa-folder-open" aria-hidden="true"></i> {{ content.field_blog_categories }} </a> </li>
+				<li> <a href="#0"> <i class="fa fa-calendar" aria-hidden="true"></i> {{ node.getCreatedTime|date('M d, Y') }} </a> </li>
+				<li> <a href="#0"> <i class="fa fa-tags" aria-hidden="true"></i> {{ content.field_tags }} </a> </li>
+				<li> <a href="#0"> <i class="fa fa-comments" aria-hidden="true"></i> {{ comment_count }} {{ 'Comments'|t }} </a> </li>
+			</ul>
+		</div>
+		<div class="post-cont">
+			{{ content.body }}
+		</div>
+		
+	</div>
+</div>
+<div class="comments-area mb-80">
+	<div class="title-g mb-50">
+		<h3>{{ 'Comments'|t }}</h3>
+	</div>
+	{{ content.comment }}
+</div>
+</div>
+{% endif %}

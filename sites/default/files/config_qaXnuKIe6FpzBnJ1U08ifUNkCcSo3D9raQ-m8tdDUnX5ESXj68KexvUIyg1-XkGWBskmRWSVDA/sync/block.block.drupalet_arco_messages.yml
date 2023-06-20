@@ -1,0 +1,22 @@
+uuid: bb7b2326-a52a-4e3b-806a-e9219a396d8d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalet_arco
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: drupalet_arco_messages
+theme: drupalet_arco
+region: content
+weight: -14
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

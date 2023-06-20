@@ -1,0 +1,22 @@
+uuid: 0c103760-e969-4c0f-8af3-9a86f8cbad6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalet_arco
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: drupalet_arco_breadcrumbs
+theme: drupalet_arco
+region: breadcrumbs
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

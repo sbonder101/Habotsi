@@ -1,0 +1,7 @@
+type: module
+name : Navi  Node Settings
+description : Navisystem Node Settings
+package: NaviTeam
+version: '9.x'
+core_version_requirement: ^8.8 || ^9
+project: 'nv_hook_node_settings'

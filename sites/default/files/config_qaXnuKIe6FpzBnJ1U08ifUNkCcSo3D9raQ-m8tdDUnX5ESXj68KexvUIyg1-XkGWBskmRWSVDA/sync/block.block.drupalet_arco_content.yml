@@ -1,0 +1,22 @@
+uuid: 46b28e99-ab34-41ca-beca-625dacd22d99
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalet_arco
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: drupalet_arco_content
+theme: drupalet_arco
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

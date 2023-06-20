@@ -1,0 +1,15 @@
+uuid: 3dd26a71-ed8a-47f2-8c15-769d06308cd8
+langcode: en
+status: true
+dependencies: {  }
+name: image_1024_682
+label: 'Image 1024*682'
+effects:
+  402b7b33-d968-4936-b2a9-a51f7490efc6:
+    uuid: 402b7b33-d968-4936-b2a9-a51f7490efc6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1024
+      height: 682
+      anchor: center-center

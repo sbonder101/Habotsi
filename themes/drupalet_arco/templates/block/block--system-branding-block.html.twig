@@ -1,0 +1,8 @@
+{% set attributes = attributes.addClass('site-branding') %}
+{% block content %}
+  {% if site_logo %}
+  	<a class="logo" href="{{ path('<front>') }}"> <img src="{{ site_logo|replace({'.svg': '.png'}) }}" alt="logo" class="logo-b" data-logo-light="{{ site_logo|replace({'.svg': '.png'}) }}" data-logo-dark="{{ site_logo|replace({'.svg': '-dark.png'}) }}"> </a>
+
+{% endif %}
+
+{% endblock %}

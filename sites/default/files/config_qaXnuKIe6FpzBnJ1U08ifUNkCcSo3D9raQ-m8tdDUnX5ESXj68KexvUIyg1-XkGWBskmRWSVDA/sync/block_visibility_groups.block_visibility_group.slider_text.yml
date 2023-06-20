@@ -1,0 +1,17 @@
+uuid: f2d8d35f-9dec-450c-b0b5-30f07df29647
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: slider_text
+label: 'Slider Text'
+logic: and
+conditions:
+  b3594190-8f06-438e-8c4e-81f990750edd:
+    id: request_path
+    pages: /slider-text
+    negate: false
+    context_mapping: {  }
+    uuid: b3594190-8f06-438e-8c4e-81f990750edd
+allow_other_conditions: false

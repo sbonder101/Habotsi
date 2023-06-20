@@ -1,0 +1,19 @@
+uuid: 5d5daddf-aea7-413f-a4e3-4fc708dcc2c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_order
+    - node.type.slideshow
+id: node.slideshow.field_order
+field_name: field_order
+entity_type: node
+bundle: slideshow
+label: Order
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

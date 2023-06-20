@@ -1,0 +1,19 @@
+uuid: 3d9d1786-56f9-4bc9-ada0-3776eb19e9a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slider_class
+    - node.type.portfolio
+id: node.portfolio.field_slider_class
+field_name: field_slider_class
+entity_type: node
+bundle: portfolio
+label: 'Slider Class'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

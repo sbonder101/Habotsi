@@ -1,0 +1,52 @@
+uuid: 57efe435-6d60-4fd2-8894-1de6fc63aaa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.freelancer
+  content:
+    - 'block_content:basic:31db5745-a087-4e92-a6ed-c382c1652426'
+  module:
+    - block_attributes
+    - block_content
+    - block_visibility_groups
+    - ntv_block_background
+  theme:
+    - drupalet_arco
+third_party_settings:
+  block_attributes:
+    attr_class: color-white
+    attr_id: ''
+    block_title: ''
+    block_sub_title: ''
+    block_desc: ''
+    block_title_icon: ''
+  ntv_block_background:
+    disable: enable
+    color: '#000000'
+    thumbnail_preview: ''
+    bg_image: /demo/sites/default/files/background/bg5.jpg
+    bg_image_type: default
+    bg_repeat: 'no'
+    bg_image_position: 'center center'
+    bg_image_size: ''
+    background_overlay: 'rgba(0, 0, 0, 0.50)'
+id: slideshowfreelancerblock
+theme: drupalet_arco
+region: slideshow_content
+weight: 0
+provider: null
+plugin: 'block_content:31db5745-a087-4e92-a6ed-c382c1652426'
+settings:
+  id: 'block_content:31db5745-a087-4e92-a6ed-c382c1652426'
+  label: 'Slideshow freelancer block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: freelancer

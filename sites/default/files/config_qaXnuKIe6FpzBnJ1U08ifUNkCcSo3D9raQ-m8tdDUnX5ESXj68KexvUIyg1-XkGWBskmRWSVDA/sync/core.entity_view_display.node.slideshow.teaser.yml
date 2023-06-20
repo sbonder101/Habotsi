@@ -1,0 +1,48 @@
+uuid: e8dfbe70-acd4-43f6-bc76-f10b5744341b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slideshow.body
+    - field.field.node.slideshow.field_button_text_1
+    - field.field.node.slideshow.field_button_text_2
+    - field.field.node.slideshow.field_button_url_1
+    - field.field.node.slideshow.field_button_url_2
+    - field.field.node.slideshow.field_floating_logo
+    - field.field.node.slideshow.field_image
+    - field.field.node.slideshow.field_order
+    - field.field.node.slideshow.field_title_2
+    - field.field.node.slideshow.field_title_3
+    - node.type.slideshow
+  module:
+    - text
+    - user
+id: node.slideshow.teaser
+targetEntityType: node
+bundle: slideshow
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_button_text_1: true
+  field_button_text_2: true
+  field_button_url_1: true
+  field_button_url_2: true
+  field_floating_logo: true
+  field_image: true
+  field_order: true
+  field_title_2: true
+  field_title_3: true

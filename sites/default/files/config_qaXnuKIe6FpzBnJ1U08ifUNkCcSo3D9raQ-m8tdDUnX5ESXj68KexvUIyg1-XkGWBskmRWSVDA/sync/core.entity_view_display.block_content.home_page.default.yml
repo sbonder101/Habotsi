@@ -1,0 +1,33 @@
+uuid: fa85d1b9-1a7c-4f8e-92a1-6c3b169ee934
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.home_page
+    - field.field.block_content.home_page.body
+    - field.field.block_content.home_page.field_header_caption
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.home_page.default
+targetEntityType: block_content
+bundle: home_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_header_caption:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

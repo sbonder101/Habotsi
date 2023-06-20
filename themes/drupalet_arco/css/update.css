@@ -1,0 +1,128 @@
+.collapse.navbar-collapse > nav{
+	display:flex;
+	width:100%;
+}
+.navbar-nav .nav-link{
+    color: #222;
+}
+.navbar-nav .active,
+.navbar-nav .is-active {
+    color: #2AAFC0 !important;
+}
+.hide{
+	display:none!important;
+}
+.color-white {
+    color: #FFF!important;
+}
+.section-box{
+	padding:0px;
+}
+.testimonials .item h6{
+	color:#FFF;
+}
+.simplenews-subscriber-form form {
+    margin: 0 auto;
+    text-align: center;
+}
+.simplenews-subscriber-form form .form-item-message,
+.simplenews-subscriber-form form .description{
+	margin:10px;
+}
+.simplenews-subscriber-form .section-head{
+	margin-bottom:0px!important;
+}
+.contact-message-main-contact-form-form form{
+	margin:0 auto;
+}
+#contact-message-main-contact-form-form .form-item {
+    margin-bottom: 13px;
+}
+#contact-message-main-contact-form-form .form-submit{
+	margin-top:15px;
+}
+#contact-message-main-contact-form-form input[type=submit]{
+	font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background: #2AAFC0;
+    background: -webkit-gradient(linear, left top, right top, from(#2AAFC0), to(#6976c5));
+    background: linear-gradient(to right, #2AAFC0, #6976c5);
+    -webkit-box-shadow: 0px 10px 30px rgb(0 0 0 / 20%);
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 20%);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#contact-message-main-contact-form-form #edit-preview{
+	display:none
+}
+.content-sidebar-page > section{
+	padding:0px;
+}
+.pagination li a{
+	background: #2AAFC0!important;
+    border-color: #2AAFC0!important;
+}
+.pagination li a {
+    color: initial;
+	background-color:#FFF!important;
+}
+.pagination li.active a,
+.pagination li a:hover{
+	background: #2AAFC0!important;
+    border-color: #2AAFC0!important;
+	color:#FFF;
+}
+
+@media screen and (max-width: 767px) {
+	.navbar-nav.ml-auto{
+		width:100%
+	}
+}
+@media screen and (max-width: 480px) {
+	.navbar-nav.ml-auto{
+		width:100%
+	}
+}
+
+#search-block-form .form-submit,
+.user-login-form .button {
+    margin-top: 20px;
+    background: #000;
+    color: #FFF;
+    width: 107px;
+	cursor:pointer
+}
+.tags-cloud-block a{
+	margin-right:10px;
+	margin-bottom:8px;
+}
+.comment-form input[type=text], .comment-form textarea,
+.user-login-form input[type=text], 
+.user-login-form input[type=password]{
+	width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+.comment-form label{
+	margin-top:16px;
+}
+.btn-submit-comment{
+	margin-left:0px;
+}
+.page-taxonomy-content ul.meta li {
+	display: inline-block;
+    font-size: 12px;
+    color: #777;
+    margin: 5px;
+}
+.user-login-form .button{
+	padding:12px;
+	border:none
+}
+	

@@ -1,0 +1,17 @@
+uuid: 8aab70c8-42e8-4ffc-b034-9a706d7b6708
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: blog_page
+label: 'Blog page'
+logic: and
+conditions:
+  5fd78f1e-4b55-4862-bf87-1002b935a51c:
+    id: request_path
+    pages: /blog
+    negate: false
+    context_mapping: {  }
+    uuid: 5fd78f1e-4b55-4862-bf87-1002b935a51c
+allow_other_conditions: false

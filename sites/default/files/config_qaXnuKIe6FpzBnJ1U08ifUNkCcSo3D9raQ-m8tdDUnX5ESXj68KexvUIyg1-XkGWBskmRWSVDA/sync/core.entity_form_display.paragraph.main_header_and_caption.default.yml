@@ -1,0 +1,32 @@
+uuid: 290733ef-615b-4fc9-80da-369164acaadf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.main_header_and_caption.field_caption
+    - field.field.paragraph.main_header_and_caption.field_header
+    - paragraphs.paragraphs_type.main_header_and_caption
+id: paragraph.main_header_and_caption.default
+targetEntityType: paragraph
+bundle: main_header_and_caption
+mode: default
+content:
+  field_caption:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_header:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

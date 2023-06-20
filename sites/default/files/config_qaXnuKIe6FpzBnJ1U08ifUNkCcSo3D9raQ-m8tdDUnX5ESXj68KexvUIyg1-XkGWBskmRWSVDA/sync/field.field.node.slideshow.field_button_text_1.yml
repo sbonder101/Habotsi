@@ -1,0 +1,19 @@
+uuid: 56a3edc6-7e65-468a-b94e-05869088b3b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_button_text_1
+    - node.type.slideshow
+id: node.slideshow.field_button_text_1
+field_name: field_button_text_1
+entity_type: node
+bundle: slideshow
+label: 'Button text 1'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

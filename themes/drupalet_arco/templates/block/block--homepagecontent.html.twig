@@ -1,0 +1,108 @@
+{% set custom_classes = '' %}
+{% if label == '' %}
+{% set custom_classes = 'no-title' %}
+{% endif %}
+{%
+  set classes = [
+    'block',
+	'widget',
+	'drp-block',
+	'sidebar-box',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    custom_classes
+  ]
+%}
+{%
+  set classes_section = [
+    'section',
+	'block',
+	'drp-block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    custom_classes
+  ]
+%}
+{%
+  set classes_footer = [
+    'block',
+	'drp-block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    custom_classes
+  ]
+%}
+
+{% if region == 'sidebar_right' or region == 'sidebar_left' %}
+	<div {{ attributes.addClass(classes) }}>
+		{{ title_suffix }}
+		{% if label %}
+			<div class="widget-title">
+				<h6>{{ label }}</h6>
+			</div>
+		{% endif %}
+		{{ content }}
+	</div>
+
+{% elseif region == 'slideshow_content' %}
+<!-- start slideshow -->
+		{{ content }}
+<!-- end slideshow -->
+
+{% elseif region == 'footer' %}
+
+	{% if label %}
+		<h4 class="sidebar-heading block-title" {{ title_attributes }}><span>{{ label }}</span></h4>
+	{% endif %}
+	{{ title_suffix }}
+	{{ content }}
+	
+{% elseif region == 'branding' or region == 'footer_left' or region == 'copyright' or region == 'menu_footer' or region == 'menu_toggle' or region == 'main_menu' %}
+	{{ content }}
+{% elseif region == 'footer_first' or region == 'footer_second' or region == 'footer_third' or region == 'footer_four' %}
+
+	<div {{ attributes.addClass(classes_footer) }}>
+		{% if label %}
+			<h6 class="font-small font-weight-normal uppercase" {{ title_attributes }}>{{ label }}</h6>
+		{% endif %}
+		
+		{{ title_suffix }}
+		{{ content }}
+		
+	</div>
+
+{% elseif region == 'content' or region == 'before_content' or region == 'content_bottom' or region == 'content_bottom_portfolio_details' %}
+	{% if content is not empty %}
+
+		<section {{ attributes.addClass(classes_section) }}>
+			<div class="container-xl">
+				<div class="row">
+					{% if label %}
+						<div class="section-head text-center col-sm-12">
+							<h4 class="title-section">{{ label }}</h4>
+							<h6 class="subtitle-section"></h6>
+						</div>
+					{% endif %}
+					{{ title_prefix }}
+					{{ content }}
+				</div>
+			</div>
+		</section>
+	{% endif %}
+
+{% else %}
+<div {{ attributes.addClass(classes) }}>
+	<div class="container">
+		{% if label %}
+			<div class="row">
+				<h3 class="sep-line-one">{{ label }}</h3>
+			</div>
+		{% endif %}
+		<div class="row">
+			{% block content %}
+			  {{ content }}
+		  {% endblock %}
+		</div>
+	</div>
+</div>
+{% endif %}

@@ -1,0 +1,51 @@
+uuid: b0614b73-6b29-472b-b5fd-48d2119b153d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.freelancer
+  content:
+    - 'block_content:basic:e7a290c9-039c-4feb-97e8-89a54c043007'
+  module:
+    - block_attributes
+    - block_content
+    - block_visibility_groups
+    - ntv_block_background
+  theme:
+    - drupalet_arco
+third_party_settings:
+  block_attributes:
+    attr_class: 'services section-padding'
+    attr_id: services
+    block_title: 'Our Services'
+    block_sub_title: 'AWESOME FEATRUSE'
+    block_desc: ''
+    block_title_icon: ''
+  ntv_block_background:
+    disable: disable
+    color: '#000000'
+    bg_image: ''
+    bg_image_type: default
+    bg_repeat: 'no'
+    bg_image_position: ''
+    bg_image_size: ''
+    background_overlay: ''
+id: blockourservicesstyle1_4
+theme: drupalet_arco
+region: content
+weight: -20
+provider: null
+plugin: 'block_content:e7a290c9-039c-4feb-97e8-89a54c043007'
+settings:
+  id: 'block_content:e7a290c9-039c-4feb-97e8-89a54c043007'
+  label: 'Our Services'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: freelancer

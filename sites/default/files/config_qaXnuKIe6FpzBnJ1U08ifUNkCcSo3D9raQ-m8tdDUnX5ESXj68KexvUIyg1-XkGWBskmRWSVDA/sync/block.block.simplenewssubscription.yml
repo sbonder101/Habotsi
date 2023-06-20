@@ -1,0 +1,51 @@
+uuid: cfab789f-42d6-486d-b1b1-67df63c30e8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.main_demo
+  module:
+    - block_attributes
+    - block_visibility_groups
+    - ntv_block_background
+    - simplenews
+  theme:
+    - drupalet_arco
+third_party_settings:
+  block_attributes:
+    attr_class: 'subscribe section-padding bg-gray bg-img'
+    attr_id: ''
+    block_title: ''
+    block_sub_title: ''
+    block_desc: ''
+    block_title_icon: ''
+  ntv_block_background:
+    disable: enable
+    color: '#000000'
+    thumbnail_preview: ''
+    bg_image: /demo/sites/default/files/background/pattern.png
+    bg_image_type: default
+    bg_repeat: 'no'
+    bg_image_position: 'center center'
+    bg_image_size: cover
+    background_overlay: ''
+id: simplenewssubscription
+theme: drupalet_arco
+region: content
+weight: 4
+provider: null
+plugin: simplenews_subscription_block
+settings:
+  id: simplenews_subscription_block
+  label: 'Join To Our Newsletter'
+  provider: simplenews
+  label_display: visible
+  newsletters:
+    default: default
+  message: 'Stay informed - subscribe to our newsletter.'
+  unique_id: d17fe957-9038-46f0-839d-26fb1b7e18b3
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: main_demo

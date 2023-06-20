@@ -1,0 +1,6 @@
+services:
+  nv_hook_node_settings.twig_extension:
+    class: Drupal\nv_hook_node_settings\TwigExtension
+    arguments: ['@entity_type.manager', '@token', '@config.factory', '@current_route_match', '@menu.link_tree', '@menu.active_trail']
+    tags:
+      - { name: twig.extension }

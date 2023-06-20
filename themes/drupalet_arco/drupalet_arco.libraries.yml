@@ -1,0 +1,54 @@
+global-styling:
+  version: VERSION
+  header: false
+  css:
+    theme:
+      #js/bootstrap/bootstrap.min.css: {}
+      https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700: {}
+      https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700: {}
+      https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800: {}
+      https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900: {} 
+      css/plugins.css: {}
+      css/style.css: {}
+      css/update.css: {}
+  js:
+    js/popper.min.js: {}
+    js/bootstrap.min.js: {}
+    js/scrollIt.min.js: {}
+    js/jquery.waypoints.min.js: {}
+    js/jquery.counterup.min.js: {}
+    js/owl.carousel.min.js: {}
+    js/jquery.magnific-popup.min.js: {}
+    js/jquery.stellar.min.js: {}
+    js/isotope.pkgd.min.js: {}
+    js/YouTubePopUp.jquery.js: {}
+    js/map.js: {}
+    js/validator.js: {}
+    js/scripts.js: {}
+    https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7lXLHQgaGdP3IvMPi1ej0B9JHUbcqB0&callback=initMap: {}
+    js/update.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+
+maintenance_page:
+  version: VERSION
+  css:
+    theme:
+      css/maintenance-page.css: {}
+
+views-infinite-scroll:
+  version: VERSION
+  js:
+    js/override/infinite-scroll.js : {}
+
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupal.debounce
+    
+particles-lib:
+  version: VERSION      
+  js:
+    js/particles.min.js: {}
