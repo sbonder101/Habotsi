@@ -1,3 +1,7 @@
+@import 'archive.scss';
+@import 'main.scss';
+@import 'what-we-good-at.scss';
+
 /*-----------------------------------------------------------------------------------
 
  Theme Name: Arco
@@ -53,16 +57,6 @@
 		font-weight: 400;
 		line-height: 43px;
 		font-family: 'Cehua Free';
-		
-		.text-right{
-			
-			width: 515px;
-			height: 129px;
-			float: right;
-			color: #1B2044;
-		}
-
-		
 
 		.text-left{
 			
@@ -73,15 +67,6 @@
 
 	.contact-us-button {
 		width: 371px;
-	}
-
-	.card-background {
-		background-image: url(../img/background/home-card-background.png);
-		background-repeat: no-repeat;
-		background-position: top -40px right;
-		padding-bottom: 230px;
-		padding-top: 100px;
-		margin-top: -100px;
 	}
 	
 	.home-background-patten-brown {
@@ -155,18 +140,6 @@
 
 ---------------------------------------------------------------- */
 
-@font-face {
-	font-family: 'Cehua Free Free';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Cehua Free Free'), url('/themes/drupalet_arco/fonts/CehuaFreeFree-K7eMl.woff') format('woff');
-  }
-
-$main-color: #2AAFC0;
-$mobile-xs-screen: 480px;
-$tablet-sm-screen: 767px;
-$desk-md-screen: 991px;
-
 /* ----------------------------------------------------------------
      [ 01 Start Basics ]
 -----------------------------------------------------------------*/
@@ -203,32 +176,58 @@ body {
 
 
 
-.home-card-padding{
-	margin-bottom: 350px;
+.home-card-padding {
 
-	.lead{
+	.mt-3 {
+		margin-top: 41px !important;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		@media screen and (min-width: 768px) {
+			align-items: flex-start;
+		}
+	}
+
+	.lead {
 		font-size: 20px;
     	font-weight: 300;
 		color: #000000;
 	}
 
-	h3{
-		font-size: 36px;
+	h3 {
+
+		font-size: 24px;
 		line-height: 43.2px;
 		font-weight: 400;
+		text-align: center;
+
+		@media screen and (max-width: $tablet-sm-screen){
+			font-size: 36px;
+		}
+
+		@media screen and (min-width: 768px) {
+			text-align: left;
+		}
 	}
 }
 
-.contact-us-padding{
-	margin-bottom: 200px;
+.contact-us-padding {
 
-	h3{
+	margin-bottom: 35px;
+
+	@media screen and (max-width: $tablet-sm-screen){
+		margin-bottom: 50px;
+	}
+
+	h3 {
 		font-size: 36px;
 		line-height: 43.2px;
 		font-weight: 400;
 	}
 
-	.lead{
+	.lead {
 		font-size: 20px;
     	font-weight: 300;
 		color: #000000;
@@ -557,7 +556,8 @@ span, a, a:hover {
      [ 03 Start Navbar ]
 -----------------------------------------------------------------*/
 
-.navbar{
+.navbar {
+
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -566,13 +566,26 @@ span, a, a:hover {
 	z-index: 9;
 	min-height: 80px;
 
-	.icon-bar{
+	&.navbar-expand-lg {
+		.container {
+			min-width: 100% !important;
+			max-width: 100% !important;
+		}
+	}
+
+	.icon-bar {
 		color: #fff;
 	}
 
-	.navbar-nav{
+	.navbar-nav {
+
+		&.ml-auto {
+			width: 100%;
+			display: flex;
+    		justify-content: flex-end;
+		}
   
-		.nav-link{
+		.nav-link {
 			font-size: 24px;
 			font-weight: 500;
 			color: #eee;
@@ -583,7 +596,7 @@ span, a, a:hover {
 		}
 
 
-		.active{
+		.active {
 			color: $main-color !important;
 		}
 	}
@@ -774,380 +787,6 @@ span, a, a:hover {
 	}
 
 }
-
-.what-we-good-at-page {
-	background: url(../img/background/whatwegoodatbrownbg.png);
-	background-repeat: no-repeat;
-	background-position: top 544px right 0px;
-
-	.columns {
-		margin: 0 auto;
-	}
-
-	.branding{
-
-		padding-top: 100px;
-		padding-bottom: 80px;
-
-		.columns-header-body{
-			margin-top: 20px;
-		}
-	}
-
-	.web {
-		background: #D9D9D9;
-		width: 100%;
-		margin-top: 30px; 
-		margin-bottom: 30px; 
-		padding-top: 80px;
-
-		.columns-header-body{
-			margin-top: 50px;
-		}
-
-		
-	}
-
-	.paragraph--type--column-image{
-		img{
-			width: auto;
-			float: right;
-		}
-	}
-
-	.campaigndevelopment{
-		.columns-header-body{
-			margin-top: 100px;
-		}
-	}
-
-	
-	.good-at-categories{
-		padding-top: 50px;
-		padding-bottom: 80px;
-		a {
-			display: inline-block;
-			padding: 10px;
-			font-family: "Work Sans";
-			font-style: normal;
-			font-weight: 400;
-			font-size: 20px;
-			line-height: 28px;
-			text-transform: uppercase;
-			color: #000000;
-		}
-	}
-
-	.header-good-at{
-		max-height: 70vh;
-		// padding-bottom: 80px;
-		overflow: hidden;
-
-		.caption{
-
-			.o-hidden{
-				display: inline-block;
-				width: 60%;
-			}
-
-			h4{
-				font-weight: 200;
-				// letter-spacing: 4px;
-				// animation-delay: .2s;
-				font-size: 36px;
-			}
-
-			h3{
-				font-weight: 200;
-				// letter-spacing: 4px;
-				// animation-delay: .2s;
-				font-size: 48px;
-			}
-
-			h1{
-				margin: 10px 0;
-				font-size: 64px;
-				font-weight: 500;
-				font-family: 'Cehua Free Free', sans-serif;
-				word-spacing: 2px;
-				letter-spacing: 2px;
-				animation-delay: .6s;
-			}
-
-			p{
-				font-size: 15px;
-				font-weight: 300;
-				color: #eee;
-				letter-spacing: 1px;
-				word-spacing: 2px;
-				animation-delay: 1s;
-
-				span{
-					letter-spacing: 5px;
-					text-transform: uppercase;
-					margin: 0 5px;
-					padding-right: 14px;
-					position: relative;
-
-					&:last-child{
-						padding: 0;
-
-						&:after{
-							display: none;
-						}
-					}
-
-					&:after{
-						content: '';
-						width: 7px;
-						height: 7px;
-						border-radius: 50%;
-						background: $main-color;
-						position: absolute;
-						top: 10px;
-						right: 0;
-						opacity: .5;
-					}
-				}
-			}
-
-			.butn{
-				animation-delay: 1.2s;
-			}
-		}
-	}
-
-	.columns{
-		p{
-			font-size: 24px;
-			color: #000000;
-		}
-
-		h3{
-			padding-bottom: 20px;
-		}
-	}
-
-
-}
-
-.archive-page {
-	background: url(../img/background/archive-bg.png);
-	background-repeat: no-repeat;
-	background-position: top 460px right 0px;
-	
-	.archive-articles{
-		color: white;
-		p{
-			color: white;
-		}
-		
-	}
-	video {
-		width: 57%;
-		/* height: 50% !important; */
-		/* object-fit: contain; */
-		display: block;
-		margin: auto;
-	}
-	.client-slider{
-		background-color: #D9D9D9;
-		h3{
-			width: 100%;
-			text-align: center;
-			padding: 40px;
-			margin: 30px 30px;
-		}
-	}
-
-	.card{
-		border: 0px!important;
-	}
-
-	
-	.archive-cards{
-		margin-bottom: 30px;
-		.archive-card{
-			text-align: left;
-			height: 550px;
-			
-			.card-body{
-				p{
-					color: #000000;
-				}
-			
-				.card-text{
-					color: #000000;
-					margin-bottom: 20px;
-				}
-			}
-			a{
-				font-size: 16px;
-				font-weight: bold;
-	
-				&::after{
-					content: "→";
-					margin-left: 5px;
-				}
-			}
-		}
-	}
-
-	
-
-	.good-at-categories{
-		padding-top: 50px;
-		padding-bottom: 80px;
-		a {
-			display: inline-block;
-			padding: 10px;
-			font-family: "Work Sans";
-			font-style: normal;
-			font-weight: 400;
-			font-size: 20px;
-			line-height: 28px;
-			text-transform: uppercase;
-			color: #000000;
-		}
-	}
-	.hero{
-		.row{
-			margin-bottom: 40px;
-		}
-	}
-
-	.header-archive{
-		max-height: 70vh;
-		// padding-bottom: 80px;
-		overflow: hidden;
-
-		.caption{
-
-			.o-hidden{
-				display: inline-block;
-				width: 60%;
-			}
-
-			h4{
-				font-weight: 200;
-				// letter-spacing: 4px;
-				// animation-delay: .2s;
-				font-size: 33px;
-			}
-
-			h3{
-				font-weight: 200;
-				// letter-spacing: 4px;
-				// animation-delay: .2s;
-				font-size: 48px;
-			}
-
-			h1{
-				margin: 10px 0;
-				font-size: 64px;
-				font-weight: 500;
-				font-family: 'Cehua Free Free', sans-serif;
-				word-spacing: 2px;
-				letter-spacing: 2px;
-				animation-delay: .6s;
-			}
-
-			p{
-				font-size: 15px;
-				font-weight: 300;
-				color: #eee;
-				letter-spacing: 1px;
-				word-spacing: 2px;
-				animation-delay: 1s;
-
-				span{
-					letter-spacing: 5px;
-					text-transform: uppercase;
-					margin: 0 5px;
-					padding-right: 14px;
-					position: relative;
-
-					&:last-child{
-						padding: 0;
-
-						&:after{
-							display: none;
-						}
-					}
-
-					&:after{
-						content: '';
-						width: 7px;
-						height: 7px;
-						border-radius: 50%;
-						background: $main-color;
-						position: absolute;
-						top: 10px;
-						right: 0;
-						opacity: .5;
-					}
-				}
-			}
-
-			.butn{
-				animation-delay: 1.2s;
-			}
-		}
-	}
-
-	.columns{
-		p{
-			font-size: 24px;
-			color: #000000;
-		}
-
-		h3{
-			padding-bottom: 20px;
-		}
-	}
-
-	.section-head{
-		margin-bottom: 80px;
-	
-		h6{
-			color: #333;
-			font-size: 11px;
-			font-weight: 500;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			display: inline-block;
-			padding: 0 15px;
-			position: relative;
-	
-			&:before, &:after{
-				content: '';
-				width: 40px;
-				height: 1px;
-				background-color: $main-color;
-				position: absolute;
-				bottom: 3px;
-			}
-	
-			&:before{
-				left: -40px;
-			}
-	
-			&:after{
-				right: -40px;
-			}
-		}
-	
-		h4{
-			font-size: 30px;
-			font-weight: 600;
-			margin-bottom: 15px;
-		}
-	}
-	
-
-}
-
-
 
 .header{
 	min-height: 100vh;
@@ -2765,10 +2404,11 @@ footer{
 		background-attachment: scroll !important;
 	}
 
-	.navbar{
+	.navbar { 
+
 		padding-left: 15px;
 
-		.navbar-collapse{
+		.navbar-collapse {
 			max-height: 340px;
 			overflow: auto;
 			background: #111;
@@ -2776,12 +2416,13 @@ footer{
 			padding: 10px 0;
 		}
 
-		.nav-link{
-			margin: 10px auto !important;
+		.nav-link {
+				margin: 5px auto !important;
+				font-size: 18px;
 			}
 		}
 
-		.nav-scroll{
+		.nav-scroll {
 
 			.navbar-collapse{
 
@@ -2892,6 +2533,10 @@ footer{
 	.portfolio .filtering span{
 		margin-bottom: 10px;
 	}
+
+	.contact-us-button {
+		padding: 10px 20px;
+	}
 }
 
 @media screen and (max-width: $mobile-xs-screen){
@@ -2935,13 +2580,17 @@ footer{
 	}
 
 	.what-we-good-at-page {
+
 		background: none;
-		.full-width, .columns{
+
+		.full-width, .columns {
 			padding-right: 15px;
 			padding-left: 15px;
 			margin-right: auto;
 			margin-left: auto;
+			max-width: 100%;
 		}
+
 		.header-good-at{
 			max-height: 100vh;
 			// padding-bottom: 80px;
@@ -3023,7 +2672,7 @@ footer{
 	}
 
 	.contact-us-button {
-		width: 100%;
+		// width: 100%;
 	}
 
 	.col{
@@ -3038,10 +2687,6 @@ footer{
 		margin-bottom: 10px;
 
 		
-	}
-	
-	.contact-us-padding{
-		margin-bottom: 10px;
 	}
 
 	.slider,.slider-fade{
@@ -3158,6 +2803,7 @@ footer{
 	-webkit-transform: translate3d(-33%, 0, 0);
 	transform: translate3d(-33%, 0, 0);
   }
+
   .item__third {
 	float: left;
 	position: relative;  /* captions can now be added */
@@ -3165,9 +2811,55 @@ footer{
   }
 
 
-  .home-slider{
+  .home-slider {
 	width:100%;
   }
+
+  .col {
+	&:nth-child(2){
+		display: none;
+	}
+} 
+
+.what-we-good-at{
+		
+	font-style: normal;
+	font-weight: 400;
+	line-height: 43px;
+	font-family: 'Cehua Free';
+	
+	.text-right{
+		width: 50vw;
+		float: right;
+		color: #1B2044;
+	}
+}
+
+  @media (min-width: 768px) {
+	
+	.card-background {
+		background-image: url(../img/background/home-card-background.png);
+		background-repeat: no-repeat;
+		background-position: top 175px right;
+		padding-bottom: 230px;
+		padding-top: 92px;
+		margin-top: -90px;
+	}
+
+	.home-card-padding {
+		margin-bottom: 350px;
+
+		.col {
+			&:nth-last-of-type(){
+				display: block;
+			}
+		} 
+
+		.h3 {
+			text-align: left;
+		}
+	}
+}
   
 
 

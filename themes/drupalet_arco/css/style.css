@@ -1,4 +1,335 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Cehua Free Free";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cehua Free Free"), url("/themes/drupalet_arco/fonts/CehuaFreeFree-K7eMl.woff") format("woff");
+}
+.archive-page {
+  background: url(../img/background/archive-bg.png);
+  background-repeat: no-repeat;
+  background-position: top 460px right 0px;
+}
+.archive-page .archive-articles {
+  color: white;
+}
+.archive-page .archive-articles p {
+  color: white;
+}
+.archive-page video {
+  width: 57%;
+  /* height: 50% !important; */
+  /* object-fit: contain; */
+  display: block;
+  margin: auto;
+}
+.archive-page .client-slider {
+  background-color: #D9D9D9;
+}
+.archive-page .client-slider h3 {
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  margin: 30px 30px;
+}
+.archive-page .card {
+  border: 0px !important;
+}
+.archive-page .archive-cards {
+  margin-bottom: 30px;
+}
+.archive-page .archive-cards .archive-card {
+  text-align: left;
+  height: 550px;
+}
+.archive-page .archive-cards .archive-card .card-body p {
+  color: #000000;
+}
+.archive-page .archive-cards .archive-card .card-body .card-text {
+  color: #000000;
+  margin-bottom: 20px;
+}
+.archive-page .archive-cards .archive-card a {
+  font-size: 16px;
+  font-weight: bold;
+}
+.archive-page .archive-cards .archive-card a::after {
+  content: "→";
+  margin-left: 5px;
+}
+.archive-page .good-at-categories {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.archive-page .good-at-categories a {
+  display: inline-block;
+  padding: 10px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.archive-page .hero .row {
+  margin-bottom: 40px;
+}
+.archive-page .header-archive {
+  max-height: 70vh;
+  overflow: hidden;
+}
+.archive-page .header-archive .caption .o-hidden {
+  display: inline-block;
+  width: 60%;
+}
+.archive-page .header-archive .caption h4 {
+  font-weight: 200;
+  font-size: 33px;
+}
+.archive-page .header-archive .caption h3 {
+  font-weight: 200;
+  font-size: 48px;
+}
+.archive-page .header-archive .caption h1 {
+  margin: 10px 0;
+  font-size: 64px;
+  font-weight: 500;
+  font-family: "Cehua Free Free", sans-serif;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  animation-delay: 0.6s;
+}
+.archive-page .header-archive .caption p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #eee;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  animation-delay: 1s;
+}
+.archive-page .header-archive .caption p span {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0 5px;
+  padding-right: 14px;
+  position: relative;
+}
+.archive-page .header-archive .caption p span:last-child {
+  padding: 0;
+}
+.archive-page .header-archive .caption p span:last-child:after {
+  display: none;
+}
+.archive-page .header-archive .caption p span:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2AAFC0;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  opacity: 0.5;
+}
+.archive-page .header-archive .caption .butn {
+  animation-delay: 1.2s;
+}
+.archive-page .columns p {
+  font-size: 24px;
+  color: #000000;
+}
+.archive-page .columns h3 {
+  padding-bottom: 20px;
+}
+.archive-page .section-head {
+  margin-bottom: 80px;
+}
+.archive-page .section-head h6 {
+  color: #333;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 0 15px;
+  position: relative;
+}
+.archive-page .section-head h6:before, .archive-page .section-head h6:after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: #2AAFC0;
+  position: absolute;
+  bottom: 3px;
+}
+.archive-page .section-head h6:before {
+  left: -40px;
+}
+.archive-page .section-head h6:after {
+  right: -40px;
+}
+.archive-page .section-head h4 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+@font-face {
+  font-family: "Cehua Free Free";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cehua Free Free"), url("/themes/drupalet_arco/fonts/CehuaFreeFree-K7eMl.woff") format("woff");
+}
+@font-face {
+  font-family: "Cehua Free Free";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cehua Free Free"), url("/themes/drupalet_arco/fonts/CehuaFreeFree-K7eMl.woff") format("woff");
+}
+.what-we-good-at-page {
+  background: url(../img/background/whatwegoodatbrownbg.png);
+  background-repeat: no-repeat;
+  background-position: top 544px right 0px;
+}
+.what-we-good-at-page .columns {
+  margin: 0 auto;
+  max-width: 960px;
+}
+.what-we-good-at-page .branding {
+  padding-bottom: 80px;
+}
+.what-we-good-at-page .branding .columns-header-body {
+  margin-top: 20px;
+  padding-right: 30px;
+}
+.what-we-good-at-page .branding .paragraph--type--column-image img {
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .what-we-good-at-page .branding .paragraph--type--column-image img {
+    margin-top: 0;
+    margin-right: -85px;
+  }
+}
+.what-we-good-at-page .web {
+  background: #D9D9D9;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 80px;
+}
+.what-we-good-at-page .web .columns-header-body {
+  margin-top: 50px;
+}
+.what-we-good-at-page .paragraph--type--column-image img {
+  width: auto;
+  float: right;
+  max-width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .what-we-good-at-page .campaigndevelopment .col-lg-6 {
+    display: flex;
+    align-items: center;
+  }
+}
+.what-we-good-at-page .good-at-categories {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  display: none;
+}
+.what-we-good-at-page .good-at-categories a {
+  display: inline-block;
+  padding: 10px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.what-we-good-at-page .header-good-at {
+  max-height: 70vh;
+  overflow: hidden;
+}
+.what-we-good-at-page .header-good-at .caption .o-hidden {
+  display: inline-block;
+  width: 60%;
+}
+.what-we-good-at-page .header-good-at .caption h4 {
+  font-weight: 200;
+  font-size: 36px;
+  margin-right: 15px;
+}
+.what-we-good-at-page .header-good-at .caption h3 {
+  font-weight: 200;
+  font-size: 40px;
+  margin-bottom: 3vw;
+  margin-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  .what-we-good-at-page .header-good-at .caption h3 {
+    font-size: 48px;
+  }
+}
+.what-we-good-at-page .header-good-at .caption h1 {
+  margin: 10px 0;
+  font-size: 64px;
+  font-weight: 500;
+  font-family: "Cehua Free Free", sans-serif;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  animation-delay: 0.6s;
+}
+.what-we-good-at-page .header-good-at .caption p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #eee;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  animation-delay: 1s;
+}
+.what-we-good-at-page .header-good-at .caption p span {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0 5px;
+  padding-right: 14px;
+  position: relative;
+}
+.what-we-good-at-page .header-good-at .caption p span:last-child {
+  padding: 0;
+}
+.what-we-good-at-page .header-good-at .caption p span:last-child:after {
+  display: none;
+}
+.what-we-good-at-page .header-good-at .caption p span:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2AAFC0;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  opacity: 0.5;
+}
+.what-we-good-at-page .header-good-at .caption .butn {
+  animation-delay: 1.2s;
+}
+.what-we-good-at-page .columns p {
+  font-size: 24px;
+  color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .what-we-good-at-page .columns p {
+    max-width: 50vw;
+  }
+}
+.what-we-good-at-page .columns h3 {
+  padding-bottom: 20px;
+}
+
 /*-----------------------------------------------------------------------------------
 
  Theme Name: Arco
@@ -38,26 +369,12 @@
     line-height: 43px;
     font-family: "Cehua Free";
   }
-  .what-we-good-at .text-right {
-    width: 515px;
-    height: 129px;
-    float: right;
-    color: #1B2044;
-  }
   .what-we-good-at .text-left {
     height: 129px;
     color: #000000;
   }
   .contact-us-button {
     width: 371px;
-  }
-  .card-background {
-    background-image: url(../img/background/home-card-background.png);
-    background-repeat: no-repeat;
-    background-position: top -40px right;
-    padding-bottom: 230px;
-    padding-top: 100px;
-    margin-top: -100px;
   }
   .home-background-patten-brown {
     background: url(../img/background/background-pattens.png);
@@ -108,12 +425,6 @@
 
 
 ---------------------------------------------------------------- */
-@font-face {
-  font-family: "Cehua Free Free";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Cehua Free Free"), url("/themes/drupalet_arco/fonts/CehuaFreeFree-K7eMl.woff") format("woff");
-}
 /* ----------------------------------------------------------------
      [ 01 Start Basics ]
 -----------------------------------------------------------------*/
@@ -135,8 +446,17 @@ body {
   overflow-x: hidden !important;
 }
 
-.home-card-padding {
-  margin-bottom: 350px;
+.home-card-padding .mt-3 {
+  margin-top: 41px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .home-card-padding .mt-3 {
+    align-items: flex-start;
+  }
 }
 .home-card-padding .lead {
   font-size: 20px;
@@ -144,13 +464,29 @@ body {
   color: #000000;
 }
 .home-card-padding h3 {
-  font-size: 36px;
+  font-size: 24px;
   line-height: 43.2px;
   font-weight: 400;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .home-card-padding h3 {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home-card-padding h3 {
+    text-align: left;
+  }
 }
 
 .contact-us-padding {
-  margin-bottom: 200px;
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 767px) {
+  .contact-us-padding {
+    margin-bottom: 50px;
+  }
 }
 .contact-us-padding h3 {
   font-size: 36px;
@@ -451,8 +787,17 @@ span, a, a:hover {
   z-index: 9;
   min-height: 80px;
 }
+.navbar.navbar-expand-lg .container {
+  min-width: 100% !important;
+  max-width: 100% !important;
+}
 .navbar .icon-bar {
   color: #fff;
+}
+.navbar .navbar-nav.ml-auto {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 .navbar .navbar-nav .nav-link {
   font-size: 24px;
@@ -601,291 +946,6 @@ span, a, a:hover {
 }
 .contact-us-page .header-contact-us .caption .butn {
   animation-delay: 1.2s;
-}
-
-.what-we-good-at-page {
-  background: url(../img/background/whatwegoodatbrownbg.png);
-  background-repeat: no-repeat;
-  background-position: top 544px right 0px;
-}
-.what-we-good-at-page .columns {
-  margin: 0 auto;
-}
-.what-we-good-at-page .branding {
-  padding-top: 100px;
-  padding-bottom: 80px;
-}
-.what-we-good-at-page .branding .columns-header-body {
-  margin-top: 20px;
-}
-.what-we-good-at-page .web {
-  background: #D9D9D9;
-  width: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding-top: 80px;
-}
-.what-we-good-at-page .web .columns-header-body {
-  margin-top: 50px;
-}
-.what-we-good-at-page .paragraph--type--column-image img {
-  width: auto;
-  float: right;
-}
-.what-we-good-at-page .campaigndevelopment .columns-header-body {
-  margin-top: 100px;
-}
-.what-we-good-at-page .good-at-categories {
-  padding-top: 50px;
-  padding-bottom: 80px;
-}
-.what-we-good-at-page .good-at-categories a {
-  display: inline-block;
-  padding: 10px;
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-transform: uppercase;
-  color: #000000;
-}
-.what-we-good-at-page .header-good-at {
-  max-height: 70vh;
-  overflow: hidden;
-}
-.what-we-good-at-page .header-good-at .caption .o-hidden {
-  display: inline-block;
-  width: 60%;
-}
-.what-we-good-at-page .header-good-at .caption h4 {
-  font-weight: 200;
-  font-size: 36px;
-}
-.what-we-good-at-page .header-good-at .caption h3 {
-  font-weight: 200;
-  font-size: 48px;
-}
-.what-we-good-at-page .header-good-at .caption h1 {
-  margin: 10px 0;
-  font-size: 64px;
-  font-weight: 500;
-  font-family: "Cehua Free Free", sans-serif;
-  word-spacing: 2px;
-  letter-spacing: 2px;
-  animation-delay: 0.6s;
-}
-.what-we-good-at-page .header-good-at .caption p {
-  font-size: 15px;
-  font-weight: 300;
-  color: #eee;
-  letter-spacing: 1px;
-  word-spacing: 2px;
-  animation-delay: 1s;
-}
-.what-we-good-at-page .header-good-at .caption p span {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  margin: 0 5px;
-  padding-right: 14px;
-  position: relative;
-}
-.what-we-good-at-page .header-good-at .caption p span:last-child {
-  padding: 0;
-}
-.what-we-good-at-page .header-good-at .caption p span:last-child:after {
-  display: none;
-}
-.what-we-good-at-page .header-good-at .caption p span:after {
-  content: "";
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #2AAFC0;
-  position: absolute;
-  top: 10px;
-  right: 0;
-  opacity: 0.5;
-}
-.what-we-good-at-page .header-good-at .caption .butn {
-  animation-delay: 1.2s;
-}
-.what-we-good-at-page .columns p {
-  font-size: 24px;
-  color: #000000;
-}
-.what-we-good-at-page .columns h3 {
-  padding-bottom: 20px;
-}
-
-.archive-page {
-  background: url(../img/background/archive-bg.png);
-  background-repeat: no-repeat;
-  background-position: top 460px right 0px;
-}
-.archive-page .archive-articles {
-  color: white;
-}
-.archive-page .archive-articles p {
-  color: white;
-}
-.archive-page video {
-  width: 57%;
-  /* height: 50% !important; */
-  /* object-fit: contain; */
-  display: block;
-  margin: auto;
-}
-.archive-page .client-slider {
-  background-color: #D9D9D9;
-}
-.archive-page .client-slider h3 {
-  width: 100%;
-  text-align: center;
-  padding: 40px;
-  margin: 30px 30px;
-}
-.archive-page .card {
-  border: 0px !important;
-}
-.archive-page .archive-cards {
-  margin-bottom: 30px;
-}
-.archive-page .archive-cards .archive-card {
-  text-align: left;
-  height: 550px;
-}
-.archive-page .archive-cards .archive-card .card-body p {
-  color: #000000;
-}
-.archive-page .archive-cards .archive-card .card-body .card-text {
-  color: #000000;
-  margin-bottom: 20px;
-}
-.archive-page .archive-cards .archive-card a {
-  font-size: 16px;
-  font-weight: bold;
-}
-.archive-page .archive-cards .archive-card a::after {
-  content: "→";
-  margin-left: 5px;
-}
-.archive-page .good-at-categories {
-  padding-top: 50px;
-  padding-bottom: 80px;
-}
-.archive-page .good-at-categories a {
-  display: inline-block;
-  padding: 10px;
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-transform: uppercase;
-  color: #000000;
-}
-.archive-page .hero .row {
-  margin-bottom: 40px;
-}
-.archive-page .header-archive {
-  max-height: 70vh;
-  overflow: hidden;
-}
-.archive-page .header-archive .caption .o-hidden {
-  display: inline-block;
-  width: 60%;
-}
-.archive-page .header-archive .caption h4 {
-  font-weight: 200;
-  font-size: 33px;
-}
-.archive-page .header-archive .caption h3 {
-  font-weight: 200;
-  font-size: 48px;
-}
-.archive-page .header-archive .caption h1 {
-  margin: 10px 0;
-  font-size: 64px;
-  font-weight: 500;
-  font-family: "Cehua Free Free", sans-serif;
-  word-spacing: 2px;
-  letter-spacing: 2px;
-  animation-delay: 0.6s;
-}
-.archive-page .header-archive .caption p {
-  font-size: 15px;
-  font-weight: 300;
-  color: #eee;
-  letter-spacing: 1px;
-  word-spacing: 2px;
-  animation-delay: 1s;
-}
-.archive-page .header-archive .caption p span {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  margin: 0 5px;
-  padding-right: 14px;
-  position: relative;
-}
-.archive-page .header-archive .caption p span:last-child {
-  padding: 0;
-}
-.archive-page .header-archive .caption p span:last-child:after {
-  display: none;
-}
-.archive-page .header-archive .caption p span:after {
-  content: "";
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #2AAFC0;
-  position: absolute;
-  top: 10px;
-  right: 0;
-  opacity: 0.5;
-}
-.archive-page .header-archive .caption .butn {
-  animation-delay: 1.2s;
-}
-.archive-page .columns p {
-  font-size: 24px;
-  color: #000000;
-}
-.archive-page .columns h3 {
-  padding-bottom: 20px;
-}
-.archive-page .section-head {
-  margin-bottom: 80px;
-}
-.archive-page .section-head h6 {
-  color: #333;
-  font-size: 11px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  display: inline-block;
-  padding: 0 15px;
-  position: relative;
-}
-.archive-page .section-head h6:before, .archive-page .section-head h6:after {
-  content: "";
-  width: 40px;
-  height: 1px;
-  background-color: #2AAFC0;
-  position: absolute;
-  bottom: 3px;
-}
-.archive-page .section-head h6:before {
-  left: -40px;
-}
-.archive-page .section-head h6:after {
-  right: -40px;
-}
-.archive-page .section-head h4 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 15px;
 }
 
 .header {
@@ -2130,7 +2190,8 @@ footer p {
     padding: 10px 0;
   }
   .navbar .nav-link {
-    margin: 10px auto !important;
+    margin: 5px auto !important;
+    font-size: 18px;
   }
   .nav-scroll .navbar-collapse .nav-link {
     color: #fff !important;
@@ -2204,6 +2265,9 @@ footer p {
   .portfolio .filtering span {
     margin-bottom: 10px;
   }
+  .contact-us-button {
+    padding: 10px 20px;
+  }
 }
 @media screen and (max-width: 480px) {
   .contact-us-page .full-width, .contact-us-page .columns {
@@ -2243,6 +2307,7 @@ footer p {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    max-width: 100%;
   }
   .what-we-good-at-page .header-good-at {
     max-height: 100vh;
@@ -2304,9 +2369,6 @@ footer p {
   .what-we-good-at-page .header-good-at .caption .butn {
     animation-delay: 1.2s;
   }
-  .contact-us-button {
-    width: 100%;
-  }
   .col {
     flex-basis: auto;
     text-align: center;
@@ -2315,9 +2377,6 @@ footer p {
     width: 100% !important;
   }
   .home-card-padding {
-    margin-bottom: 10px;
-  }
-  .contact-us-padding {
     margin-bottom: 10px;
   }
   .slider .owl-item, .slider-fade .owl-item {
@@ -2424,6 +2483,42 @@ footer p {
 
 .home-slider {
   width: 100%;
+}
+
+.col:nth-child(2) {
+  display: none;
+}
+
+.what-we-good-at {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 43px;
+  font-family: "Cehua Free";
+}
+.what-we-good-at .text-right {
+  width: 50vw;
+  float: right;
+  color: #1B2044;
+}
+
+@media (min-width: 768px) {
+  .card-background {
+    background-image: url(../img/background/home-card-background.png);
+    background-repeat: no-repeat;
+    background-position: top 175px right;
+    padding-bottom: 230px;
+    padding-top: 92px;
+    margin-top: -90px;
+  }
+  .home-card-padding {
+    margin-bottom: 350px;
+  }
+  .home-card-padding .col:nth-last-of-type() {
+    display: block;
+  }
+  .home-card-padding .h3 {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
