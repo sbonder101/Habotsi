@@ -20,6 +20,15 @@
 		
 	}
 
+    .slick-slide {
+
+        margin: 0 15px;
+        
+        @media screen and (max-width: 767px){
+            width: 200px !important;
+        }
+    }
+
 	video {
 		width: 57%;
 		/* height: 50% !important; */

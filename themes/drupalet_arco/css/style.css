@@ -19,6 +19,14 @@
 .archive-page .archive-articles p {
   color: white;
 }
+.archive-page .slick-slide {
+  margin: 0 15px;
+}
+@media screen and (max-width: 767px) {
+  .archive-page .slick-slide {
+    width: 200px !important;
+  }
+}
 .archive-page video {
   width: 57%;
   /* height: 50% !important; */
@@ -407,16 +415,6 @@
     overflow-x: hidden;
   }
 }
-.slick-slide {
-  margin: 0 15px;
-  width: 200px !important;
-}
-@media screen and (min-width: 768px) {
-  .slick-slide {
-    width: 398px !important;
-  }
-}
-
 /* ----------------------------------------------------------------
 
  == Table Of Content
@@ -718,6 +716,9 @@ span, a, a:hover {
 }
 .frontpage video::-webkit-media-controls-volume-slider {
   display: none !important;
+}
+.frontpage .slick-slide {
+  padding: 0 15px;
 }
 
 /* ----------------------------------------------------------------
@@ -2525,7 +2526,7 @@ footer p {
     background-image: url(../img/background/home-card-background.png);
     background-repeat: no-repeat;
     background-position: top 175px right;
-    padding-bottom: 230px;
+    padding-bottom: 385px;
     padding-top: 92px;
     margin-top: -90px;
   }
