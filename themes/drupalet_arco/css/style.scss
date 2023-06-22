@@ -113,7 +113,14 @@
 	}
 }
 
-.slick-slide {padding: 0 30px;}
+.slick-slide {
+	margin: 0 15px;
+	width: 200px !important;
+
+	@media screen and (min-width: 768px){
+		width: 398px !important;
+	}
+}
 /* ----------------------------------------------------------------
 
  == Table Of Content
@@ -434,9 +441,10 @@ span, a, a:hover {
      [ End Basics ]
 -----------------------------------------------------------------*/
 
-.frontpage{
+.frontpage {
 	video {
 		&.hero__video {
+
 			left: 0;
 			top: 0;
 			z-index: 0;
@@ -445,14 +453,18 @@ span, a, a:hover {
 			background-repeat: no-repeat;
 			-webkit-background-size: cover;
 			background-size: cover;
+			max-height: 100vh;
+			min-width: 100vw;
+			object-fit: cover;
 		}
+
 		&::-webkit-media-controls-enclosure {
 			display: flex !important;
-			align-items: center;
+			// align-items: center;
 		}
 	  
 		&::-webkit-media-controls-volume-slider {
-		display: none !important;
+			display: none !important;
 		}
 	}
 }

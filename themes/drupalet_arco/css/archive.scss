@@ -5,14 +5,21 @@
 	background: url(../img/background/archive-bg.png);
 	background-repeat: no-repeat;
 	background-position: top 460px right 0px;
+
+    .full-width {
+        padding: 20px;
+    }
 	
 	.archive-articles {
+
 		color: white;
-		p{
+
+		p {
 			color: white;
 		}
 		
 	}
+
 	video {
 		width: 57%;
 		/* height: 50% !important; */
@@ -20,9 +27,12 @@
 		display: block;
 		margin: auto;
 	}
-	.client-slider{
+
+	.client-slider {
+         
 		background-color: #D9D9D9;
-		h3{
+
+		h3 {
 			width: 100%;
 			text-align: center;
 			padding: 40px;
@@ -30,28 +40,37 @@
 		}
 	}
 
-	.card{
+    .slick img, .slick iframe {
+        min-height: 90px !important;
+        min-width: 90px !important;
+    }
+
+	.card {
 		border: 0px!important;
 	}
 
 	
-	.archive-cards{
+	.archive-cards {
+
 		margin-bottom: 30px;
-		.archive-card{
+
+		.archive-card {
+
 			text-align: left;
 			height: 550px;
 			
-			.card-body{
-				p{
+			.card-body  {
+				p {
 					color: #000000;
 				}
 			
-				.card-text{
+				.card-text {
 					color: #000000;
 					margin-bottom: 20px;
 				}
 			}
-			a{
+
+			a {
 				font-size: 16px;
 				font-weight: bold;
 	

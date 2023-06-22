@@ -10,6 +10,9 @@
   background-repeat: no-repeat;
   background-position: top 460px right 0px;
 }
+.archive-page .full-width {
+  padding: 20px;
+}
 .archive-page .archive-articles {
   color: white;
 }
@@ -31,6 +34,10 @@
   text-align: center;
   padding: 40px;
   margin: 30px 30px;
+}
+.archive-page .slick img, .archive-page .slick iframe {
+  min-height: 90px !important;
+  min-width: 90px !important;
 }
 .archive-page .card {
   border: 0px !important;
@@ -194,7 +201,12 @@
 }
 .what-we-good-at-page .columns {
   margin: 0 auto;
+}
+.what-we-good-at-page .columns .container {
   max-width: 960px;
+}
+.what-we-good-at-page .mb-100 {
+  padding: 25px;
 }
 .what-we-good-at-page .branding {
   padding-bottom: 80px;
@@ -209,7 +221,6 @@
 @media screen and (min-width: 768px) {
   .what-we-good-at-page .branding .paragraph--type--column-image img {
     margin-top: 0;
-    margin-right: -85px;
   }
 }
 .what-we-good-at-page .web {
@@ -397,7 +408,13 @@
   }
 }
 .slick-slide {
-  padding: 0 30px;
+  margin: 0 15px;
+  width: 200px !important;
+}
+@media screen and (min-width: 768px) {
+  .slick-slide {
+    width: 398px !important;
+  }
 }
 
 /* ----------------------------------------------------------------
@@ -692,10 +709,12 @@ span, a, a:hover {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
+  max-height: 100vh;
+  min-width: 100vw;
+  object-fit: cover;
 }
 .frontpage video::-webkit-media-controls-enclosure {
   display: flex !important;
-  align-items: center;
 }
 .frontpage video::-webkit-media-controls-volume-slider {
   display: none !important;
