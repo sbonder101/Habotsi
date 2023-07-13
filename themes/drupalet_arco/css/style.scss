@@ -973,7 +973,7 @@ span, a, a:hover {
 
 		h3{
 			margin-bottom: 10px;
-			font-family: 'Cehua Free Free', sans-serif;
+			font-family: 'Cehua Free Free', sans-serif !important;
 			font-size: 48px;
 			font-weight: 400;
 			padding-bottom: 10px;
@@ -2496,9 +2496,9 @@ footer{
 		line-height: 1.3;
 	}
 
-	.hero .intro h3{
+	.hero .intro h3 {
 		font-size: 28px;
-		font-family: 'Work Sans', sans-serif;
+		font-family: "Cehua Free Free", sans-serif;
 	}
 
 	.hero .intro h4{
