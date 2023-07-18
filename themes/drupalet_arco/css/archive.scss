@@ -9,7 +9,7 @@
     .full-width {
         padding: 20px;
     }
-	
+
 	.archive-articles {
 
 		color: white;
@@ -17,16 +17,20 @@
 		p {
 			color: white;
 		}
-		
+
 	}
 
     .slick-slide {
-
         margin: 0 15px;
-        
-        @media screen and (max-width: 767px){
-            width: 200px !important;
+        overflow: hidden;
+
+      .views-field.views-field-nothing {
+        max-width: 100%;
+
+        span.field-content {
+          max-width: 100%;
         }
+      }
     }
 
 	video {
@@ -38,7 +42,7 @@
 	}
 
 	.client-slider {
-         
+
 		background-color: #D9D9D9;
 
 		h3 {
@@ -58,7 +62,7 @@
 		border: 0px!important;
 	}
 
-	
+
 	.archive-cards {
 
 		margin-bottom: 30px;
@@ -67,12 +71,12 @@
 
 			text-align: left;
 			height: 550px;
-			
+
 			.card-body  {
 				p {
 					color: #000000;
 				}
-			
+
 				.card-text {
 					color: #000000;
 					margin-bottom: 20px;
@@ -82,7 +86,7 @@
 			a {
 				font-size: 16px;
 				font-weight: bold;
-	
+
 				&::after{
 					content: "→";
 					margin-left: 5px;
@@ -91,7 +95,7 @@
 		}
 	}
 
-	
+
 
 	.good-at-categories{
 		padding-top: 50px;
@@ -206,7 +210,7 @@
 
 	.section-head{
 		margin-bottom: 80px;
-	
+
 		h6{
 			color: #333;
 			font-size: 11px;
@@ -216,7 +220,7 @@
 			display: inline-block;
 			padding: 0 15px;
 			position: relative;
-	
+
 			&:before, &:after{
 				content: '';
 				width: 40px;
@@ -225,22 +229,22 @@
 				position: absolute;
 				bottom: 3px;
 			}
-	
+
 			&:before{
 				left: -40px;
 			}
-	
+
 			&:after{
 				right: -40px;
 			}
 		}
-	
+
 		h4{
 			font-size: 30px;
 			font-weight: 600;
 			margin-bottom: 15px;
 		}
 	}
-	
+
 
 }

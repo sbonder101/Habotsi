@@ -21,11 +21,13 @@
 }
 .archive-page .slick-slide {
   margin: 0 15px;
+  overflow: hidden;
 }
-@media screen and (max-width: 767px) {
-  .archive-page .slick-slide {
-    width: 200px !important;
-  }
+.archive-page .slick-slide .views-field.views-field-nothing {
+  max-width: 100%;
+}
+.archive-page .slick-slide .views-field.views-field-nothing span.field-content {
+  max-width: 100%;
 }
 .archive-page video {
   width: 57%;
